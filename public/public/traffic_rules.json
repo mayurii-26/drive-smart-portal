@@ -1,0 +1,2153 @@
+[
+  {
+    "rule": "Overspeeding",
+    "keywords": [
+      "overspeeding",
+      "speeding",
+      "speed limit",
+      "velocity",
+      "limit exceeded",
+      "fast driving",
+      "exceeding speed",
+      "speed violation",
+      "over speed",
+      "high speed"
+    ],
+    "description": "Exceeding the prescribed speed limits on roads. Speed limits vary by road type and vehicle category. Urban areas: 50 km/h, Highways: 80-100 km/h depending on vehicle type.",
+    "fine": "Rs. 1,000 - 2,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000 for first offense, Rs. 4,000 for repeat offenses",
+      "Karnataka": "Rs. 1,000 for first offense, Rs. 2,000 for repeat offenses",
+      "Delhi": "Rs. 1,000 - 2,000, license may be suspended for 3 months",
+      "Tamil Nadu": "Rs. 1,500 for first offense, Rs. 3,000 for repeat offenses",
+      "Gujarat": "Rs. 1,000 - 2,000, vehicle may be impounded"
+    },
+    "notes": "Speed limits: Urban areas - 50 km/h, Highways - 80-100 km/h depending on vehicle type. Heavy vehicles have lower limits. Repeat offenses may result in license suspension."
+  },
+  {
+    "rule": "Drunk Driving (DUI)",
+    "keywords": [
+      "drunk driving",
+      "dui",
+      "alcohol",
+      "driving under influence",
+      "drunk",
+      "alcohol driving",
+      "drinking and driving",
+      "intoxicated",
+      "bac",
+      "blood alcohol"
+    ],
+    "description": "Driving under the influence of alcohol or drugs is a serious criminal offense with severe penalties. Blood alcohol limit: 0.03% (30 mg per 100 ml).",
+    "fine": "Rs. 10,000",
+    "section": "Section 185 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000 fine + 6 months imprisonment (first offense), Rs. 15,000 + 2 years (repeat)",
+      "Karnataka": "Rs. 10,000 + 6 months imprisonment, license cancellation",
+      "Delhi": "Rs. 10,000 + 6 months imprisonment, license suspension",
+      "Tamil Nadu": "Rs. 10,000 + 6 months imprisonment, vehicle impoundment",
+      "Gujarat": "Rs. 10,000 + 6 months imprisonment, license cancellation"
+    },
+    "notes": "First offense: Rs. 10,000 fine + 6 months imprisonment. Repeat offense: Rs. 15,000 + 2 years imprisonment. License may be suspended or cancelled. Zero tolerance policy in many states."
+  },
+  {
+    "rule": "Not Wearing Seat Belt",
+    "keywords": [
+      "seat belt",
+      "seatbelt",
+      "no seat belt",
+      "without seat belt",
+      "safety belt",
+      "belt violation",
+      "not wearing belt"
+    ],
+    "description": "Drivers and front-seat passengers must wear seat belts while the vehicle is in motion. This is mandatory for safety and violation attracts penalties.",
+    "fine": "Rs. 1,000",
+    "section": "Section 194B of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000 for driver and passenger",
+      "Karnataka": "Rs. 1,000, applicable to both driver and front-seat passenger",
+      "Delhi": "Rs. 1,000, license may be suspended for repeat offenses",
+      "Tamil Nadu": "Rs. 1,000, fine applies to both driver and passenger",
+      "Gujarat": "Rs. 1,000, mandatory for all front-seat occupants"
+    },
+    "notes": "Applicable to driver and front-seat passenger. Not wearing seat belt is a traffic violation. Some states may suspend license for repeat offenses."
+  },
+  {
+    "rule": "Not Wearing Helmet (Two-Wheeler)",
+    "keywords": [
+      "helmet",
+      "no helmet",
+      "without helmet",
+      "helmet rule",
+      "two wheeler helmet",
+      "bike helmet",
+      "scooter helmet",
+      "pillion helmet",
+      "rider helmet"
+    ],
+    "description": "Riding a two-wheeler without a helmet is mandatory for both driver and pillion rider. Helmet must be ISI certified and properly fastened.",
+    "fine": "Rs. 1,000",
+    "section": "Section 194D of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, license suspended for 3 months on repeat offense",
+      "Karnataka": "Rs. 1,000 for rider, Rs. 500 for pillion",
+      "Delhi": "Rs. 1,000, license suspension for repeat violations",
+      "Tamil Nadu": "Rs. 1,000, both rider and pillion must wear helmet",
+      "Gujarat": "Rs. 1,000, helmet must be ISI certified"
+    },
+    "notes": "Helmet must be ISI certified. Both rider and pillion must wear helmets. License may be suspended for 3 months on repeat offense. Some states have different fines for rider and pillion."
+  },
+  {
+    "rule": "Triple Riding",
+    "keywords": [
+      "triple riding",
+      "three on bike",
+      "three people",
+      "extra passenger",
+      "overloading two wheeler",
+      "more than two"
+    ],
+    "description": "Carrying more than two people (including driver) on a two-wheeler is illegal. Only driver and one pillion rider are allowed.",
+    "fine": "Rs. 2,000",
+    "section": "Section 194 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, vehicle may be impounded",
+      "Karnataka": "Rs. 2,000, dangerous and illegal",
+      "Delhi": "Rs. 2,000, license may be suspended",
+      "Tamil Nadu": "Rs. 2,000, only driver and one pillion allowed",
+      "Gujarat": "Rs. 2,000, standard fine across India"
+    },
+    "notes": "Only driver and one pillion rider are allowed on two-wheelers. Carrying more than two people is dangerous and illegal. Fine is Rs. 2,000. Vehicle may be impounded."
+  },
+  {
+    "rule": "Jumping Red Light",
+    "keywords": [
+      "red light",
+      "jumping signal",
+      "signal violation",
+      "red signal",
+      "traffic light",
+      "signal jump",
+      "running red",
+      "red light jump"
+    ],
+    "description": "Violating traffic signals, especially jumping red lights, is a serious traffic offense. Red light violation is dangerous and can cause accidents.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, license may be suspended for 3 months",
+      "Karnataka": "Rs. 5,000, repeat offense: Rs. 10,000",
+      "Delhi": "Rs. 5,000, camera-based enforcement",
+      "Tamil Nadu": "Rs. 5,000, vehicle may be impounded",
+      "Gujarat": "Rs. 5,000, license suspension for repeat offenses"
+    },
+    "notes": "Red light violation is dangerous and can cause accidents. Fine is Rs. 5,000 for first offense. Some states may have higher penalties for repeat offenses. Camera-based enforcement is common in metro cities."
+  },
+  {
+    "rule": "Using Mobile Phone While Driving",
+    "keywords": [
+      "mobile phone",
+      "phone while driving",
+      "cell phone",
+      "texting",
+      "calling",
+      "mobile use",
+      "using phone",
+      "handheld phone",
+      "distracted driving"
+    ],
+    "description": "Using a mobile phone while driving is prohibited and attracts penalties. This includes talking, texting, or any other use of mobile phone while driving.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000 first offense, Rs. 10,000 repeat offense, license suspension",
+      "Karnataka": "Rs. 5,000, license may be suspended for 3 months",
+      "Delhi": "Rs. 5,000, camera-based enforcement",
+      "Tamil Nadu": "Rs. 5,000, repeat offense: Rs. 10,000",
+      "Gujarat": "Rs. 5,000, license suspension for repeat violations"
+    },
+    "notes": "Using mobile phone includes talking, texting, or any other use. Hands-free devices are allowed but not recommended. First offense: Rs. 5,000. Repeat offense: Rs. 10,000. License may be suspended."
+  },
+  {
+    "rule": "Driving Without PUC Certificate",
+    "keywords": [
+      "puc",
+      "puc expired",
+      "pollution certificate",
+      "pollution under control",
+      "no puc",
+      "puc certificate",
+      "emission certificate",
+      "pollution test"
+    ],
+    "description": "Pollution Under Control (PUC) certificate is mandatory. Driving without a valid PUC certificate attracts penalties. PUC must be renewed periodically.",
+    "fine": "Rs. 10,000",
+    "section": "Section 190(2) of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, vehicle may be impounded until PUC obtained",
+      "Karnataka": "Rs. 10,000, certificate must be renewed every 6 months (BS-IV) or annually (BS-VI)",
+      "Delhi": "Rs. 10,000, mandatory for all vehicles",
+      "Tamil Nadu": "Rs. 10,000, vehicle cannot be used without valid PUC",
+      "Gujarat": "Rs. 10,000, PUC centers available at authorized locations"
+    },
+    "notes": "PUC certificate must be renewed periodically. For BS-IV vehicles: every 6 months, for BS-VI: every year. Certificate can be obtained from authorized PUC centers. Fine is uniform across India."
+  },
+  {
+    "rule": "Driving Without Insurance",
+    "keywords": [
+      "no insurance",
+      "without insurance",
+      "insurance expired",
+      "third party insurance",
+      "vehicle insurance",
+      "insurance violation",
+      "uninsured vehicle"
+    ],
+    "description": "Third-party insurance is mandatory for all motor vehicles in India. Driving without valid insurance is a punishable offense. Comprehensive insurance is recommended for better coverage.",
+    "fine": "Rs. 2,000",
+    "section": "Section 196 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, vehicle may be impounded if insurance not valid",
+      "Karnataka": "Rs. 2,000, third-party insurance is compulsory",
+      "Delhi": "Rs. 2,000, vehicle cannot be driven without valid insurance",
+      "Tamil Nadu": "Rs. 2,000, comprehensive insurance recommended",
+      "Gujarat": "Rs. 2,000, insurance must be renewed before expiry"
+    },
+    "notes": "Third-party insurance is compulsory. Comprehensive insurance is recommended for better coverage. Vehicle may be impounded if insurance is not valid. Insurance must be renewed before expiry."
+  },
+  {
+    "rule": "Wrong Parking",
+    "keywords": [
+      "wrong parking",
+      "illegal parking",
+      "no parking",
+      "parking violation",
+      "blocking traffic",
+      "parked illegally",
+      "unauthorized parking"
+    ],
+    "description": "Parking in no-parking zones, blocking traffic, or parking in disabled parking spaces without authorization. Parking violations vary by location and severity.",
+    "fine": "Rs. 500 - 1,000",
+    "section": "Section 122 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500-1,000, vehicle may be towed, higher fines in metro areas",
+      "Karnataka": "Rs. 500-1,000, vehicle clamping in some areas",
+      "Delhi": "Rs. 500-1,000, towing charges additional",
+      "Tamil Nadu": "Rs. 500-1,000, fines vary by location",
+      "Gujarat": "Rs. 500-1,000, disabled parking violation: Rs. 1,000"
+    },
+    "notes": "Parking violations vary by location. Blocking traffic or parking in no-parking zones attracts fines. Metro cities may have higher penalties. Vehicle may be towed or clamped. Disabled parking violation: Rs. 1,000."
+  },
+  {
+    "rule": "Wrong Lane Driving",
+    "keywords": [
+      "wrong lane",
+      "lane violation",
+      "lane discipline",
+      "wrong side lane",
+      "lane change violation",
+      "improper lane"
+    ],
+    "description": "Not following lane discipline, changing lanes without indicators, or driving in wrong lanes. Proper lane discipline is essential for road safety.",
+    "fine": "Rs. 500",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, higher penalties on highways",
+      "Karnataka": "Rs. 500, lane discipline strictly enforced",
+      "Delhi": "Rs. 500, camera-based enforcement on major roads",
+      "Tamil Nadu": "Rs. 500, some states may impose higher penalties",
+      "Gujarat": "Rs. 500, standard fine across India"
+    },
+    "notes": "Proper lane discipline is essential for road safety. Use indicators before changing lanes. Standard fine is Rs. 500. Some states may impose higher penalties on highways."
+  },
+  {
+    "rule": "Wrong-Side Driving",
+    "keywords": [
+      "wrong side",
+      "wrong side driving",
+      "against traffic",
+      "opposite direction",
+      "reverse direction",
+      "wrong way"
+    ],
+    "description": "Driving on the wrong side of the road or against traffic flow is illegal and extremely dangerous.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, license may be suspended for 3 months",
+      "Karnataka": "Rs. 5,000, extremely dangerous violation",
+      "Delhi": "Rs. 5,000, camera-based enforcement",
+      "Tamil Nadu": "Rs. 5,000, can cause head-on collisions",
+      "Gujarat": "Rs. 5,000, standard penalty across India"
+    },
+    "notes": "Wrong side driving is a major cause of accidents. License may be suspended for 3 months. Repeat offenses may result in license cancellation."
+  },
+  {
+    "rule": "Dangerous Driving",
+    "keywords": [
+      "dangerous driving",
+      "reckless driving",
+      "rash driving",
+      "dangerous",
+      "reckless",
+      "rash",
+      "unsafe driving"
+    ],
+    "description": "Driving in a manner that endangers life or is likely to cause harm to any person. This includes reckless driving, racing, and other dangerous behaviors.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000 + 6 months imprisonment, license cancellation",
+      "Karnataka": "Rs. 5,000 + imprisonment, vehicle impoundment",
+      "Delhi": "Rs. 5,000 + 6 months imprisonment, license suspension",
+      "Tamil Nadu": "Rs. 5,000 + imprisonment, repeat offense: higher penalty",
+      "Gujarat": "Rs. 5,000 + 6 months imprisonment, license cancellation"
+    },
+    "notes": "Dangerous driving includes reckless driving, racing, and behaviors that endanger life. Fine: Rs. 5,000 + 6 months imprisonment. License may be suspended or cancelled. Repeat offenses have higher penalties."
+  },
+  {
+    "rule": "Overtaking Violations",
+    "keywords": [
+      "overtaking",
+      "wrong overtaking",
+      "overtaking violation",
+      "overtake from left",
+      "unsafe overtaking",
+      "overtaking at curve"
+    ],
+    "description": "Overtaking from wrong side, overtaking at curves, or violating safe overtaking procedures. Overtaking must be done from right side and only when safe.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, dangerous overtaking can result in license suspension",
+      "Karnataka": "Rs. 5,000, never overtake at curves or bridges",
+      "Delhi": "Rs. 5,000, camera-based enforcement on highways",
+      "Tamil Nadu": "Rs. 5,000, overtaking from left is illegal",
+      "Gujarat": "Rs. 5,000, standard penalty across India"
+    },
+    "notes": "Overtaking must be done from right side. Never overtake at curves, bridges, or in no-overtaking zones. Dangerous overtaking can result in license suspension. Fine is Rs. 5,000."
+  },
+  {
+    "rule": "Number Plate Violations",
+    "keywords": [
+      "number plate",
+      "license plate",
+      "registration plate",
+      "no number plate",
+      "wrong number plate",
+      "hsrp",
+      "high security plate"
+    ],
+    "description": "Vehicles must display valid registration number plates as per prescribed format and specifications. Number plates must be clearly visible and comply with HSRP norms.",
+    "fine": "Rs. 5,000",
+    "section": "Section 192 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, vehicle may be impounded until proper number plate is fixed",
+      "Karnataka": "Rs. 5,000, HSRP mandatory for all vehicles",
+      "Delhi": "Rs. 5,000, number plates must be clearly visible",
+      "Tamil Nadu": "Rs. 5,000, vehicle cannot be used without proper number plate",
+      "Gujarat": "Rs. 5,000, standard penalty across India"
+    },
+    "notes": "Number plates must be clearly visible, properly fixed, and comply with High Security Registration Plate (HSRP) norms. Vehicle may be impounded until proper number plate is fixed."
+  },
+  {
+    "rule": "Driving Without License",
+    "keywords": [
+      "no license",
+      "without license",
+      "no dl",
+      "driving license",
+      "license violation",
+      "unlicensed driving"
+    ],
+    "description": "Operating a motor vehicle without a valid driving license is a serious offense under the Motor Vehicles Act 1988. License must be valid and appropriate for vehicle category.",
+    "fine": "Rs. 5,000",
+    "section": "Section 181 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, vehicle may be impounded, possible imprisonment",
+      "Karnataka": "Rs. 5,000, subsequent offenses may result in higher penalties",
+      "Delhi": "Rs. 5,000, license must match vehicle category",
+      "Tamil Nadu": "Rs. 5,000, vehicle impoundment possible",
+      "Gujarat": "Rs. 5,000, first offense: Rs. 5,000, repeat: higher penalty"
+    },
+    "notes": "First offense: Rs. 5,000. Subsequent offenses may result in higher penalties and possible imprisonment. License must be valid and appropriate for vehicle category. Vehicle may be impounded."
+  },
+  {
+    "rule": "Expired Driving License",
+    "keywords": [
+      "expired license",
+      "expired dl",
+      "license expired",
+      "dl expired",
+      "renew license",
+      "license renewal"
+    ],
+    "description": "Driving with an expired driving license is illegal. License must be renewed before expiry. Driving with expired license attracts penalties.",
+    "fine": "Rs. 5,000",
+    "section": "Section 181 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, license must be renewed before expiry",
+      "Karnataka": "Rs. 5,000, grace period may apply for renewal",
+      "Delhi": "Rs. 5,000, license renewal can be done online",
+      "Tamil Nadu": "Rs. 5,000, vehicle may be impounded",
+      "Gujarat": "Rs. 5,000, standard penalty across India"
+    },
+    "notes": "License must be renewed before expiry. Driving with expired license is illegal. Some states may have grace periods for renewal. License renewal can be done online through Parivahan portal."
+  },
+  {
+    "rule": "Driving Without RC",
+    "keywords": [
+      "no rc",
+      "without rc",
+      "registration certificate",
+      "rc expired",
+      "no registration",
+      "registration violation"
+    ],
+    "description": "Driving a vehicle without a valid Registration Certificate or with an expired RC is illegal. RC must be renewed before expiry and must be carried while driving.",
+    "fine": "Rs. 5,000",
+    "section": "Section 192 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, vehicle may be impounded until RC obtained",
+      "Karnataka": "Rs. 5,000, RC must be renewed before expiry",
+      "Delhi": "Rs. 5,000, driving with expired RC attracts penalty",
+      "Tamil Nadu": "Rs. 5,000, some states may charge Rs. 2,000 for first offense",
+      "Gujarat": "Rs. 5,000, vehicle cannot be driven without valid RC"
+    },
+    "notes": "RC must be renewed before expiry. Driving with expired RC can result in vehicle impoundment. Some states may charge Rs. 2,000 for first offense. Digital RC in DigiLocker is accepted."
+  },
+  {
+    "rule": "Hit and Run",
+    "keywords": [
+      "hit and run",
+      "accident and run",
+      "fleeing accident",
+      "leaving accident",
+      "run after accident"
+    ],
+    "description": "Leaving the scene of an accident without providing assistance or information is a serious criminal offense. Hit and run cases attract severe penalties including imprisonment.",
+    "fine": "Rs. 5,000 + Imprisonment",
+    "section": "Section 134 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000 + 6 months to 2 years imprisonment, license cancellation",
+      "Karnataka": "Rs. 5,000 + imprisonment, vehicle impoundment",
+      "Delhi": "Rs. 5,000 + 6 months to 2 years imprisonment, license suspension",
+      "Tamil Nadu": "Rs. 5,000 + imprisonment, repeat offense: higher penalty",
+      "Gujarat": "Rs. 5,000 + 6 months to 2 years imprisonment, license cancellation"
+    },
+    "notes": "Hit and run is a serious criminal offense. Fine: Rs. 5,000 + 6 months to 2 years imprisonment. License may be cancelled. Must stop and provide assistance at accident scene."
+  },
+  {
+    "rule": "Blocking Junctions",
+    "keywords": [
+      "blocking junction",
+      "blocking intersection",
+      "junction blocking",
+      "intersection blocking",
+      "blocking traffic",
+      "gridlock"
+    ],
+    "description": "Stopping or parking at intersections, blocking traffic flow, or causing gridlock at junctions is a traffic violation.",
+    "fine": "Rs. 500",
+    "section": "Section 122 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, vehicle may be towed",
+      "Karnataka": "Rs. 500, causes traffic congestion",
+      "Delhi": "Rs. 500, camera-based enforcement",
+      "Tamil Nadu": "Rs. 500, minimum 5 meters from junction required",
+      "Gujarat": "Rs. 500, standard fine across India"
+    },
+    "notes": "Never stop or park at intersections. Minimum 5 meters distance from junction required. Blocking junctions causes traffic congestion. Vehicle may be towed."
+  },
+  {
+    "rule": "Signal Violation",
+    "keywords": [
+      "signal violation",
+      "traffic signal",
+      "ignoring signal",
+      "signal jump",
+      "violating signal",
+      "not following signal"
+    ],
+    "description": "Not following traffic signals, ignoring signals, or violating signal rules is a traffic offense.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, license may be suspended",
+      "Karnataka": "Rs. 5,000, repeat offense: Rs. 10,000",
+      "Delhi": "Rs. 5,000, camera-based enforcement",
+      "Tamil Nadu": "Rs. 5,000, vehicle may be impounded",
+      "Gujarat": "Rs. 5,000, standard penalty across India"
+    },
+    "notes": "Traffic signals must be followed. Red means stop, yellow means caution, green means go. Fine is Rs. 5,000. License may be suspended for repeat offenses."
+  },
+  {
+    "rule": "Zebra Crossing Violation",
+    "keywords": [
+      "zebra crossing",
+      "pedestrian crossing",
+      "not stopping zebra",
+      "crossing violation",
+      "pedestrian right of way"
+    ],
+    "description": "Not stopping at zebra crossings when pedestrians are crossing is a traffic violation. Pedestrians have right of way at zebra crossings.",
+    "fine": "Rs. 1,000",
+    "section": "Section 194B of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, pedestrians have absolute right of way",
+      "Karnataka": "Rs. 1,000, vehicles must stop and allow pedestrians to cross",
+      "Delhi": "Rs. 1,000, camera-based enforcement at major crossings",
+      "Tamil Nadu": "Rs. 1,000, this is important for pedestrian safety",
+      "Gujarat": "Rs. 1,000, standard fine across all states"
+    },
+    "notes": "Pedestrians have right of way at zebra crossings. Vehicles must stop and allow pedestrians to cross safely. Fine is Rs. 1,000. This is important for pedestrian safety."
+  },
+  {
+    "rule": "Pollution Violation",
+    "keywords": [
+      "pollution",
+      "emission",
+      "smoke",
+      "black smoke",
+      "pollution violation",
+      "excessive emission",
+      "polluting vehicle"
+    ],
+    "description": "Emitting excessive smoke or pollutants from vehicle exhaust is a violation. Vehicles must comply with Bharat Stage emission norms.",
+    "fine": "Rs. 10,000",
+    "section": "Section 190(2) of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, vehicle may be impounded",
+      "Karnataka": "Rs. 10,000, must comply with BS emission norms",
+      "Delhi": "Rs. 10,000, strict enforcement in NCR",
+      "Tamil Nadu": "Rs. 10,000, vehicle cannot be used if polluting",
+      "Gujarat": "Rs. 10,000, standard penalty across India"
+    },
+    "notes": "Vehicles must comply with Bharat Stage (BS) emission norms. Excessive smoke or pollutants attract fines. Vehicle may be impounded. PUC certificate ensures compliance."
+  },
+  {
+    "rule": "Honking Violations",
+    "keywords": [
+      "honking",
+      "horn",
+      "no honking",
+      "honking violation",
+      "excessive honking",
+      "horn in silence zone",
+      "noise pollution"
+    ],
+    "description": "Using horn in no-honking zones like hospitals, schools, and residential areas, or excessive honking is a violation.",
+    "fine": "Rs. 1,000",
+    "section": "Section 194B of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, no-honking zones strictly enforced",
+      "Karnataka": "Rs. 1,000, fines may vary by city",
+      "Delhi": "Rs. 1,000, metro cities have stricter enforcement",
+      "Tamil Nadu": "Rs. 1,000, violations disturb patients and students",
+      "Gujarat": "Rs. 1,000, standard fine across India"
+    },
+    "notes": "No-honking zones are marked for noise pollution control. Violations disturb patients, students, and residents. Fine is Rs. 1,000. Metro cities have stricter enforcement."
+  },
+  {
+    "rule": "Overloading Vehicle",
+    "keywords": [
+      "overloading",
+      "overload",
+      "excess weight",
+      "over capacity",
+      "extra load",
+      "beyond capacity"
+    ],
+    "description": "Carrying passengers or goods beyond the permitted capacity of the vehicle is illegal. Overloading damages roads and is dangerous.",
+    "fine": "Rs. 20,000 per extra ton",
+    "section": "Section 194 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 20,000 per extra ton, vehicle may be impounded",
+      "Karnataka": "Rs. 20,000 per extra ton, penalties may vary",
+      "Delhi": "Rs. 20,000 per extra ton, vehicle impoundment until excess load removed",
+      "Tamil Nadu": "Rs. 20,000 per extra ton, overloading damages roads",
+      "Gujarat": "Rs. 20,000 per extra ton, vehicle may be impounded until load reduced"
+    },
+    "notes": "Overloading damages roads and is dangerous. Fine is calculated per extra ton of weight. Vehicle may be impounded until excess load is removed. Penalties may vary by state."
+  },
+  {
+    "rule": "Driving Without FASTag",
+    "keywords": [
+      "fastag",
+      "no fastag",
+      "without fastag",
+      "toll violation",
+      "toll payment"
+    ],
+    "description": "FASTag is mandatory for all vehicles on national highways. Vehicles without FASTag must pay double the toll amount.",
+    "fine": "Double the toll amount",
+    "section": "National Highways Fee Rules",
+    "stateVariations": {
+      "Maharashtra": "Double toll amount, FASTag mandatory on all national highways",
+      "Karnataka": "Double toll, some state highways may have similar requirements",
+      "Delhi": "Double toll, applies to all national highways",
+      "Tamil Nadu": "Double toll amount, FASTag can be obtained online or at toll plazas",
+      "Gujarat": "Double toll, applies to all national highways"
+    },
+    "notes": "FASTag is mandatory on all national highways. Vehicles without FASTag must pay double the toll amount. FASTag can be obtained online or at toll plazas."
+  },
+  {
+    "rule": "Not Giving Way to Emergency Vehicles",
+    "keywords": [
+      "emergency vehicle",
+      "ambulance",
+      "fire truck",
+      "police vehicle",
+      "give way",
+      "not giving way"
+    ],
+    "description": "Failing to give way to ambulances, fire trucks, or other emergency vehicles is a traffic violation.",
+    "fine": "Rs. 10,000",
+    "section": "Section 194E of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, this is a serious offense",
+      "Karnataka": "Rs. 10,000, emergency vehicles have absolute right of way",
+      "Delhi": "Rs. 10,000, pull to side immediately when emergency vehicle approaches",
+      "Tamil Nadu": "Rs. 10,000, standard penalty across India",
+      "Gujarat": "Rs. 10,000, not giving way can delay critical services"
+    },
+    "notes": "Emergency vehicles have right of way. Not giving way can delay critical services and endanger lives. Fine is Rs. 10,000. Pull to side immediately when emergency vehicle approaches."
+  },
+  {
+    "rule": "Violating One-Way Traffic",
+    "keywords": [
+      "one way",
+      "one-way",
+      "wrong direction",
+      "against one way",
+      "one way violation"
+    ],
+    "description": "Driving against one-way traffic or violating one-way road restrictions is dangerous and can cause head-on collisions.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, license may be suspended for repeat offenses",
+      "Karnataka": "Rs. 5,000, one-way violations are strictly penalized",
+      "Delhi": "Rs. 5,000, camera-based enforcement",
+      "Tamil Nadu": "Rs. 5,000, always follow traffic direction signs",
+      "Gujarat": "Rs. 5,000, standard penalty across India"
+    },
+    "notes": "One-way violations are dangerous and can cause head-on collisions. Always follow traffic direction signs. Fine is Rs. 5,000. License may be suspended for repeat offenses."
+  },
+  {
+    "rule": "Not Carrying Required Documents",
+    "keywords": [
+      "documents",
+      "missing documents",
+      "no documents",
+      "required documents",
+      "dl rc insurance puc"
+    ],
+    "description": "Drivers must carry valid DL, RC, Insurance, and PUC certificate while driving. Digital copies in DigiLocker are legally accepted.",
+    "fine": "Rs. 500 per document",
+    "section": "Section 130 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500 per missing document, digital documents accepted",
+      "Karnataka": "Rs. 500 per document, DigiLocker documents are valid",
+      "Delhi": "Rs. 500 per document, digital copies legally accepted",
+      "Tamil Nadu": "Rs. 500 per document, required: DL, RC, Insurance, PUC",
+      "Gujarat": "Rs. 500 per document, digital documents in DigiLocker accepted"
+    },
+    "notes": "Required documents: Driving License, Registration Certificate, Insurance, PUC. Fine is Rs. 500 per missing document. Digital copies in DigiLocker are legally valid."
+  },
+  {
+    "rule": "Driving in Bus Lane",
+    "keywords": [
+      "bus lane",
+      "bus only lane",
+      "wrong lane bus"
+    ],
+    "description": "Driving in lanes reserved for buses is prohibited.",
+    "fine": "Rs. 500",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Driving in lanes reserved for buses is prohibited. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "U-Turn Violation",
+    "keywords": [
+      "u-turn",
+      "uturn",
+      "no u-turn",
+      "u turn violation"
+    ],
+    "description": "Making U-turns where prohibited or violating U-turn rules.",
+    "fine": "Rs. 1,000",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Making U-turns where prohibited or violating U-turn rules. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Using Indicators",
+    "keywords": [
+      "no indicator",
+      "without indicator",
+      "signal violation",
+      "not signaling"
+    ],
+    "description": "Not using indicators before turning or changing lanes.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not using indicators before turning or changing lanes. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Side Mirrors",
+    "keywords": [
+      "no mirrors",
+      "missing mirrors",
+      "side mirrors"
+    ],
+    "description": "Vehicles must have proper side mirrors as per specifications.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Vehicles must have proper side mirrors as per specifications. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Expired Insurance",
+    "keywords": [
+      "insurance expired",
+      "expired insurance",
+      "insurance renewal"
+    ],
+    "description": "Driving with expired insurance is illegal.",
+    "fine": "Rs. 2,000",
+    "section": "Section 196 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Driving with expired insurance is illegal. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Medical Certificate",
+    "keywords": [
+      "medical certificate",
+      "fitness certificate",
+      "no medical"
+    ],
+    "description": "Commercial drivers must have valid medical fitness certificate.",
+    "fine": "Rs. 2,000",
+    "section": "Section 181 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Commercial drivers must have valid medical fitness certificate. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Displaying L Board",
+    "keywords": [
+      "l board",
+      "learner board",
+      "no l board"
+    ],
+    "description": "Learner drivers must display 'L' board on vehicle.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Learner drivers must display 'L' board on vehicle. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Permit",
+    "keywords": [
+      "no permit",
+      "without permit",
+      "permit violation"
+    ],
+    "description": "Commercial vehicles must have valid permits for operation.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Commercial vehicles must have valid permits for operation. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Height Restrictions",
+    "keywords": [
+      "height restriction",
+      "over height",
+      "bridge clearance"
+    ],
+    "description": "Vehicles exceeding height restrictions on bridges or underpasses.",
+    "fine": "Rs. 5,000",
+    "section": "Section 194 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Vehicles exceeding height restrictions on bridges or underpasses. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Traffic Police Directions",
+    "keywords": [
+      "traffic police",
+      "police directions",
+      "ignoring police"
+    ],
+    "description": "Not following directions given by traffic police officers.",
+    "fine": "Rs. 2,000",
+    "section": "Section 132 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Not following directions given by traffic police officers. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Conductor License",
+    "keywords": [
+      "conductor license",
+      "no conductor",
+      "bus conductor"
+    ],
+    "description": "Public transport buses must have a licensed conductor.",
+    "fine": "Rs. 5,000",
+    "section": "Section 181 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Public transport buses must have a licensed conductor. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Tourist Permit",
+    "keywords": [
+      "tourist permit",
+      "no tourist permit"
+    ],
+    "description": "Tourist vehicles must have valid tourist permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Tourist vehicles must have valid tourist permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Carrying Emergency Kit",
+    "keywords": [
+      "emergency kit",
+      "first aid",
+      "warning triangle"
+    ],
+    "description": "Vehicles must carry basic emergency kit including first aid.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Vehicles must carry basic emergency kit including first aid. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating No Entry Restrictions",
+    "keywords": [
+      "no entry",
+      "restricted entry",
+      "entry violation"
+    ],
+    "description": "Entering areas marked with 'No Entry' signs.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Entering areas marked with 'No Entry' signs. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without International Driving Permit",
+    "keywords": [
+      "idp",
+      "international permit",
+      "foreign driving"
+    ],
+    "description": "Indian drivers need IDP to drive in foreign countries.",
+    "fine": "Varies by country",
+    "section": "Geneva Convention of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Varies by country, standard penalty",
+      "Karnataka": "Varies by country, standard penalty",
+      "Delhi": "Varies by country, standard penalty",
+      "Tamil Nadu": "Varies by country, standard penalty",
+      "Gujarat": "Varies by country, standard penalty"
+    },
+    "notes": "Indian drivers need IDP to drive in foreign countries. Fine: Varies by country. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Overtaking Rules",
+    "keywords": [
+      "overtaking rules",
+      "unsafe overtaking"
+    ],
+    "description": "Violating safe overtaking procedures and rules.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Violating safe overtaking procedures and rules. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Right Turn Rules",
+    "keywords": [
+      "right turn",
+      "turning violation",
+      "wrong turn"
+    ],
+    "description": "Violating right turn rules at intersections.",
+    "fine": "Rs. 1,000",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Violating right turn rules at intersections. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Stage Carriage Permit",
+    "keywords": [
+      "stage carriage",
+      "bus permit",
+      "public transport"
+    ],
+    "description": "Stage carriage vehicles must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Stage carriage vehicles must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating U-Turn Restrictions",
+    "keywords": [
+      "u-turn restriction",
+      "no uturn"
+    ],
+    "description": "Making U-turns where prohibited.",
+    "fine": "Rs. 1,000",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Making U-turns where prohibited. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Goods Carriage Permit",
+    "keywords": [
+      "goods carriage",
+      "truck permit",
+      "commercial permit"
+    ],
+    "description": "Goods vehicles must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Goods vehicles must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Contract Carriage Permit",
+    "keywords": [
+      "contract carriage",
+      "taxi permit",
+      "cab permit"
+    ],
+    "description": "Contract carriage vehicles must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Contract carriage vehicles must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Speed Limit in School Zone",
+    "keywords": [
+      "school zone",
+      "school area",
+      "speed school"
+    ],
+    "description": "Exceeding speed limits in school zones.",
+    "fine": "Rs. 5,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits in school zones. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Lane Markings",
+    "keywords": [
+      "lane markings",
+      "solid line",
+      "dashed line"
+    ],
+    "description": "Not following lane markings and road markings.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not following lane markings and road markings. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Road Tax",
+    "keywords": [
+      "road tax",
+      "tax violation",
+      "no tax"
+    ],
+    "description": "Vehicles must have valid road tax payment.",
+    "fine": "Rs. 2,000",
+    "section": "State Motor Vehicle Tax Rules of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Vehicles must have valid road tax payment. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Emission Test",
+    "keywords": [
+      "emission test",
+      "pollution test",
+      "bs norms"
+    ],
+    "description": "Vehicles must pass emission tests and meet BS norms.",
+    "fine": "Rs. 10,000",
+    "section": "Section 190(2) of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Vehicles must pass emission tests and meet BS norms. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Traffic Police",
+    "keywords": [
+      "traffic police directions",
+      "ignoring traffic cop"
+    ],
+    "description": "Disobeying traffic police instructions.",
+    "fine": "Rs. 2,000",
+    "section": "Section 132 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Disobeying traffic police instructions. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Fitness Certificate",
+    "keywords": [
+      "fitness certificate",
+      "vehicle fitness",
+      "commercial fitness"
+    ],
+    "description": "Commercial vehicles must have valid fitness certificate.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Commercial vehicles must have valid fitness certificate. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Parking Meter Rules",
+    "keywords": [
+      "parking meter",
+      "meter violation",
+      "time limit"
+    ],
+    "description": "Violating parking meter rules and time limits.",
+    "fine": "Rs. 500",
+    "section": "Section 122 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Violating parking meter rules and time limits. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Blocking Fire Hydrant",
+    "keywords": [
+      "fire hydrant",
+      "blocking hydrant"
+    ],
+    "description": "Parking or blocking fire hydrants is prohibited.",
+    "fine": "Rs. 1,000",
+    "section": "Section 122 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Parking or blocking fire hydrants is prohibited. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Learner License",
+    "keywords": [
+      "learner license",
+      "ll",
+      "no learner"
+    ],
+    "description": "Learning to drive requires a valid Learner's License.",
+    "fine": "Rs. 1,000",
+    "section": "Section 181 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Learning to drive requires a valid Learner's License. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Wearing Reflective Vest",
+    "keywords": [
+      "reflective vest",
+      "safety vest",
+      "high visibility"
+    ],
+    "description": "Commercial drivers must wear reflective vests in certain conditions.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Commercial drivers must wear reflective vests in certain conditions. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Load Restrictions",
+    "keywords": [
+      "load restriction",
+      "weight limit",
+      "capacity"
+    ],
+    "description": "Violating vehicle load and weight restrictions.",
+    "fine": "Rs. 20,000 per ton",
+    "section": "Section 194 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 20,000 per ton, standard penalty",
+      "Karnataka": "Rs. 20,000 per ton, standard penalty",
+      "Delhi": "Rs. 20,000 per ton, standard penalty",
+      "Tamil Nadu": "Rs. 20,000 per ton, standard penalty",
+      "Gujarat": "Rs. 20,000 per ton, standard penalty"
+    },
+    "notes": "Violating vehicle load and weight restrictions. Fine: Rs. 20,000 per ton. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Emission Certificate",
+    "keywords": [
+      "emission certificate",
+      "pollution certificate"
+    ],
+    "description": "Vehicles must have valid emission certificates.",
+    "fine": "Rs. 10,000",
+    "section": "Section 190(2) of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Vehicles must have valid emission certificates. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Stop Sign",
+    "keywords": [
+      "stop sign",
+      "not stopping",
+      "ignoring stop"
+    ],
+    "description": "Not stopping at mandatory stop signs.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Not stopping at mandatory stop signs. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Give Way Sign",
+    "keywords": [
+      "give way",
+      "yield",
+      "not giving way"
+    ],
+    "description": "Not giving way at give way signs.",
+    "fine": "Rs. 1,000",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Not giving way at give way signs. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Permit for Goods",
+    "keywords": [
+      "goods permit",
+      "truck permit"
+    ],
+    "description": "Goods vehicles must have valid goods carriage permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Goods vehicles must have valid goods carriage permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit on Highway",
+    "keywords": [
+      "highway speed",
+      "expressway speed",
+      "speed highway"
+    ],
+    "description": "Exceeding speed limits on highways and expressways.",
+    "fine": "Rs. 2,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits on highways and expressways. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Roundabout Rules",
+    "keywords": [
+      "roundabout",
+      "traffic circle",
+      "roundabout violation"
+    ],
+    "description": "Violating roundabout navigation and right of way rules.",
+    "fine": "Rs. 1,000",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Violating roundabout navigation and right of way rules. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Tourist Permit",
+    "keywords": [
+      "tourist permit",
+      "travel permit"
+    ],
+    "description": "Tourist vehicles must have valid tourist permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Tourist vehicles must have valid tourist permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Parking Restrictions",
+    "keywords": [
+      "parking restriction",
+      "no parking zone"
+    ],
+    "description": "Parking in restricted or no-parking zones.",
+    "fine": "Rs. 500-1,000",
+    "section": "Section 122 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500-1,000, standard penalty",
+      "Karnataka": "Rs. 500-1,000, standard penalty",
+      "Delhi": "Rs. 500-1,000, standard penalty",
+      "Tamil Nadu": "Rs. 500-1,000, standard penalty",
+      "Gujarat": "Rs. 500-1,000, standard penalty"
+    },
+    "notes": "Parking in restricted or no-parking zones. Fine: Rs. 500-1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Left Turn Rules",
+    "keywords": [
+      "left turn",
+      "turning left",
+      "left turn violation"
+    ],
+    "description": "Violating left turn rules and procedures.",
+    "fine": "Rs. 1,000",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Violating left turn rules and procedures. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Contract Carriage Permit",
+    "keywords": [
+      "contract carriage permit",
+      "taxi permit"
+    ],
+    "description": "Contract carriage vehicles must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Contract carriage vehicles must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit in Residential Area",
+    "keywords": [
+      "residential speed",
+      "residential area",
+      "speed residential"
+    ],
+    "description": "Exceeding speed limits in residential areas.",
+    "fine": "Rs. 1,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits in residential areas. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Pedestrian Rules",
+    "keywords": [
+      "pedestrian",
+      "pedestrian right",
+      "pedestrian crossing"
+    ],
+    "description": "Not following pedestrian right of way rules.",
+    "fine": "Rs. 1,000",
+    "section": "Section 194B of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Not following pedestrian right of way rules. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Stage Carriage Permit",
+    "keywords": [
+      "stage carriage permit",
+      "bus permit"
+    ],
+    "description": "Stage carriage vehicles must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Stage carriage vehicles must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating No Overtaking Zone",
+    "keywords": [
+      "no overtaking",
+      "overtaking zone",
+      "no passing"
+    ],
+    "description": "Overtaking in no-overtaking zones.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Overtaking in no-overtaking zones. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Merge Rules",
+    "keywords": [
+      "merge",
+      "merging",
+      "lane merge"
+    ],
+    "description": "Not following proper merging procedures.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not following proper merging procedures. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Goods Permit",
+    "keywords": [
+      "goods permit",
+      "cargo permit"
+    ],
+    "description": "Goods vehicles must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Goods vehicles must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit Near School",
+    "keywords": [
+      "school speed",
+      "near school",
+      "school area speed"
+    ],
+    "description": "Exceeding speed limits near schools.",
+    "fine": "Rs. 5,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits near schools. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Yield Rules",
+    "keywords": [
+      "yield",
+      "yielding",
+      "give way"
+    ],
+    "description": "Not yielding when required by traffic rules.",
+    "fine": "Rs. 1,000",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Not yielding when required by traffic rules. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Passenger Permit",
+    "keywords": [
+      "passenger permit",
+      "people carrier"
+    ],
+    "description": "Passenger vehicles must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Passenger vehicles must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit in Hospital Zone",
+    "keywords": [
+      "hospital zone",
+      "hospital area",
+      "speed hospital"
+    ],
+    "description": "Exceeding speed limits in hospital zones.",
+    "fine": "Rs. 5,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits in hospital zones. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Keep Left Rules",
+    "keywords": [
+      "keep left",
+      "left side",
+      "drive left"
+    ],
+    "description": "Not following keep left rules on roads.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not following keep left rules on roads. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Auto Permit",
+    "keywords": [
+      "auto permit",
+      "auto rickshaw permit"
+    ],
+    "description": "Auto rickshaws must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Auto rickshaws must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit in Market Area",
+    "keywords": [
+      "market speed",
+      "market area",
+      "commercial speed"
+    ],
+    "description": "Exceeding speed limits in market and commercial areas.",
+    "fine": "Rs. 1,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits in market and commercial areas. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Overtaking Distance Rules",
+    "keywords": [
+      "overtaking distance",
+      "safe distance",
+      "overtaking gap"
+    ],
+    "description": "Not maintaining safe distance while overtaking.",
+    "fine": "Rs. 5,000",
+    "section": "Section 184 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 5,000, standard penalty",
+      "Karnataka": "Rs. 5,000, standard penalty",
+      "Delhi": "Rs. 5,000, standard penalty",
+      "Tamil Nadu": "Rs. 5,000, standard penalty",
+      "Gujarat": "Rs. 5,000, standard penalty"
+    },
+    "notes": "Not maintaining safe distance while overtaking. Fine: Rs. 5,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid E-Rickshaw Permit",
+    "keywords": [
+      "e-rickshaw",
+      "electric rickshaw",
+      "e-rickshaw permit"
+    ],
+    "description": "E-rickshaws must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "E-rickshaws must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit in Industrial Area",
+    "keywords": [
+      "industrial speed",
+      "industrial area"
+    ],
+    "description": "Exceeding speed limits in industrial areas.",
+    "fine": "Rs. 1,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits in industrial areas. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Headlight Rules",
+    "keywords": [
+      "headlight",
+      "high beam",
+      "low beam",
+      "headlight violation"
+    ],
+    "description": "Not using headlights properly or violating headlight rules.",
+    "fine": "Rs. 1,000",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Not using headlights properly or violating headlight rules. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Cab Permit",
+    "keywords": [
+      "cab permit",
+      "taxi permit",
+      "app cab"
+    ],
+    "description": "Cabs and taxis must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Cabs and taxis must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit in Construction Zone",
+    "keywords": [
+      "construction zone",
+      "construction speed"
+    ],
+    "description": "Exceeding speed limits in construction zones.",
+    "fine": "Rs. 2,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits in construction zones. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Tail Light Rules",
+    "keywords": [
+      "tail light",
+      "brake light",
+      "rear light"
+    ],
+    "description": "Not having proper tail lights or brake lights.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not having proper tail lights or brake lights. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Maxi Cab Permit",
+    "keywords": [
+      "maxi cab",
+      "maxi cab permit"
+    ],
+    "description": "Maxi cabs must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Maxi cabs must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit in Tunnel",
+    "keywords": [
+      "tunnel speed",
+      "tunnel area"
+    ],
+    "description": "Exceeding speed limits in tunnels.",
+    "fine": "Rs. 2,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits in tunnels. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Indicator Rules",
+    "keywords": [
+      "indicator",
+      "turn signal",
+      "blinker"
+    ],
+    "description": "Not using indicators properly or at all.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not using indicators properly or at all. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid School Bus Permit",
+    "keywords": [
+      "school bus",
+      "school bus permit"
+    ],
+    "description": "School buses must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "School buses must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit on Bridge",
+    "keywords": [
+      "bridge speed",
+      "bridge area"
+    ],
+    "description": "Exceeding speed limits on bridges.",
+    "fine": "Rs. 2,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits on bridges. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Hazard Light Rules",
+    "keywords": [
+      "hazard light",
+      "emergency light",
+      "parking light"
+    ],
+    "description": "Not using hazard lights when required.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not using hazard lights when required. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Ambulance Permit",
+    "keywords": [
+      "ambulance permit",
+      "medical vehicle"
+    ],
+    "description": "Ambulances must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Ambulances must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit on Flyover",
+    "keywords": [
+      "flyover speed",
+      "overpass speed"
+    ],
+    "description": "Exceeding speed limits on flyovers.",
+    "fine": "Rs. 2,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits on flyovers. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Fog Light Rules",
+    "keywords": [
+      "fog light",
+      "fog lamp"
+    ],
+    "description": "Not using fog lights in foggy conditions.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not using fog lights in foggy conditions. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Hearse Permit",
+    "keywords": [
+      "hearse",
+      "funeral vehicle",
+      "hearse permit"
+    ],
+    "description": "Hearses must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Hearses must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit on Underpass",
+    "keywords": [
+      "underpass speed",
+      "underpass"
+    ],
+    "description": "Exceeding speed limits in underpasses.",
+    "fine": "Rs. 2,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits in underpasses. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Reverse Light Rules",
+    "keywords": [
+      "reverse light",
+      "backup light"
+    ],
+    "description": "Not having proper reverse lights.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not having proper reverse lights. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Tractor Permit",
+    "keywords": [
+      "tractor",
+      "tractor permit",
+      "farm vehicle"
+    ],
+    "description": "Tractors must have valid permits for road use.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Tractors must have valid permits for road use. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit on Expressway",
+    "keywords": [
+      "expressway speed",
+      "expressway"
+    ],
+    "description": "Exceeding speed limits on expressways.",
+    "fine": "Rs. 2,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 2,000, standard penalty",
+      "Karnataka": "Rs. 2,000, standard penalty",
+      "Delhi": "Rs. 2,000, standard penalty",
+      "Tamil Nadu": "Rs. 2,000, standard penalty",
+      "Gujarat": "Rs. 2,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits on expressways. Fine: Rs. 2,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Number Plate Light Rules",
+    "keywords": [
+      "number plate light",
+      "license plate light"
+    ],
+    "description": "Not having proper number plate illumination.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not having proper number plate illumination. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Driving Without Valid Trailer Permit",
+    "keywords": [
+      "trailer",
+      "trailer permit"
+    ],
+    "description": "Trailers must have valid permits.",
+    "fine": "Rs. 10,000",
+    "section": "Section 192A of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 10,000, standard penalty",
+      "Karnataka": "Rs. 10,000, standard penalty",
+      "Delhi": "Rs. 10,000, standard penalty",
+      "Tamil Nadu": "Rs. 10,000, standard penalty",
+      "Gujarat": "Rs. 10,000, standard penalty"
+    },
+    "notes": "Trailers must have valid permits. Fine: Rs. 10,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Violating Speed Limit on Service Road",
+    "keywords": [
+      "service road",
+      "service lane speed"
+    ],
+    "description": "Exceeding speed limits on service roads.",
+    "fine": "Rs. 1,000",
+    "section": "Section 183 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 1,000, standard penalty",
+      "Karnataka": "Rs. 1,000, standard penalty",
+      "Delhi": "Rs. 1,000, standard penalty",
+      "Tamil Nadu": "Rs. 1,000, standard penalty",
+      "Gujarat": "Rs. 1,000, standard penalty"
+    },
+    "notes": "Exceeding speed limits on service roads. Fine: Rs. 1,000. Standard penalty across India. Some states may have variations."
+  },
+  {
+    "rule": "Not Following Side Reflector Rules",
+    "keywords": [
+      "side reflector",
+      "reflector"
+    ],
+    "description": "Not having proper side reflectors.",
+    "fine": "Rs. 500",
+    "section": "Section 177 of Motor Vehicles Act 1988",
+    "stateVariations": {
+      "Maharashtra": "Rs. 500, standard penalty",
+      "Karnataka": "Rs. 500, standard penalty",
+      "Delhi": "Rs. 500, standard penalty",
+      "Tamil Nadu": "Rs. 500, standard penalty",
+      "Gujarat": "Rs. 500, standard penalty"
+    },
+    "notes": "Not having proper side reflectors. Fine: Rs. 500. Standard penalty across India. Some states may have variations."
+  }
+]

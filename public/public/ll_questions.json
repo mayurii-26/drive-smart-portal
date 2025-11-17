@@ -1,0 +1,1212 @@
+[
+  {
+    "question": "What does a red octagonal sign with 'STOP' written on it indicate?",
+    "options": [
+      "Slow down and proceed",
+      "Stop completely and wait",
+      "Yield to traffic",
+      "No entry"
+    ],
+    "answerIndex": 1,
+    "explanation": "A red octagonal STOP sign requires vehicles to come to a complete halt and wait before proceeding. It is mandatory at intersections where visibility is limited or where stopping is required for safety."
+  },
+  {
+    "question": "What does a triangular sign with red border indicate?",
+    "options": [
+      "Information sign",
+      "Warning sign",
+      "Mandatory sign",
+      "Speed limit sign"
+    ],
+    "answerIndex": 1,
+    "explanation": "Triangular signs with red borders are warning signs. They alert drivers about potential hazards ahead such as curves, intersections, pedestrian crossings, or road conditions."
+  },
+  {
+    "question": "What does a circular blue sign with white symbols indicate?",
+    "options": [
+      "Prohibition sign",
+      "Warning sign",
+      "Mandatory sign",
+      "Information sign"
+    ],
+    "answerIndex": 2,
+    "explanation": "Circular blue signs with white symbols are mandatory signs that require drivers to follow specific instructions, such as 'Keep Left', 'Compulsory Ahead', or 'One Way'."
+  },
+  {
+    "question": "What does a yellow diamond-shaped sign typically indicate?",
+    "options": [
+      "Speed limit",
+      "No parking",
+      "Caution or warning",
+      "Direction indication"
+    ],
+    "answerIndex": 2,
+    "explanation": "Yellow diamond-shaped signs are warning signs that alert drivers to potential dangers ahead, such as curves, intersections, animal crossings, or slippery roads."
+  },
+  {
+    "question": "What does a red circle with a diagonal line through it indicate?",
+    "options": [
+      "Warning ahead",
+      "Prohibition or restriction",
+      "Direction allowed",
+      "Speed limit"
+    ],
+    "answerIndex": 1,
+    "explanation": "Red circular signs with diagonal lines indicate prohibition or restriction of certain actions, such as 'No Entry', 'No Parking', 'No U-turn', or 'No Horn'."
+  },
+  {
+    "question": "What does a rectangular green sign typically indicate?",
+    "options": [
+      "Danger ahead",
+      "Direction and distance information",
+      "Speed restriction",
+      "Prohibition"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rectangular green signs provide directional and distance information, guiding drivers to destinations, facilities, or services along the route."
+  },
+  {
+    "question": "What does a sign showing a bicycle symbol with a diagonal line mean?",
+    "options": [
+      "Cyclists allowed",
+      "Bicycles prohibited",
+      "Cycle parking area",
+      "Cycle crossing ahead"
+    ],
+    "answerIndex": 1,
+    "explanation": "A bicycle symbol with a diagonal red line indicates that bicycles are prohibited on that particular road or section."
+  },
+  {
+    "question": "What does a 'Give Way' sign look like?",
+    "options": [
+      "Red octagon",
+      "Yellow diamond",
+      "Inverted red triangle",
+      "Blue circle"
+    ],
+    "answerIndex": 2,
+    "explanation": "A 'Give Way' sign is an inverted red triangle with white border and 'GIVE WAY' text, instructing drivers to slow down and yield to traffic on the main road."
+  },
+  {
+    "question": "What does a sign with 'P' in a circle with diagonal line indicate?",
+    "options": [
+      "Parking allowed",
+      "Parking prohibited",
+      "Parking area ahead",
+      "Pay for parking"
+    ],
+    "answerIndex": 1,
+    "explanation": "A 'P' symbol in a red circle with diagonal line indicates that parking is prohibited in that area. Vehicles parked there may be towed or fined."
+  },
+  {
+    "question": "What does a white arrow on blue circular sign pointing left indicate?",
+    "options": [
+      "No left turn",
+      "Turn left prohibited",
+      "Turn left compulsory",
+      "Left lane only"
+    ],
+    "answerIndex": 2,
+    "explanation": "A white arrow pointing left on a blue circular sign is a mandatory sign requiring vehicles to turn left. This is typically used at intersections."
+  },
+  {
+    "question": "What does a sign showing '40' in a red circle indicate?",
+    "options": [
+      "Minimum speed 40 km/h",
+      "Maximum speed 40 km/h",
+      "Route number 40",
+      "Distance 40 km"
+    ],
+    "answerIndex": 1,
+    "explanation": "A number in a red circle indicates the maximum speed limit allowed on that road. Driving faster than this limit is a traffic violation."
+  },
+  {
+    "question": "What does a sign with 'SCHOOL' written on it indicate?",
+    "options": [
+      "School ahead - reduce speed",
+      "School parking area",
+      "School zone - no entry",
+      "School bus stop"
+    ],
+    "answerIndex": 0,
+    "explanation": "A SCHOOL sign warns drivers that a school is ahead. Drivers must reduce speed, watch for children, and follow the posted speed limit (usually 25 km/h near schools)."
+  },
+  {
+    "question": "What does a yellow sign with 'H' symbol indicate?",
+    "options": [
+      "Hospital ahead",
+      "Highway ahead",
+      "Hotel nearby",
+      "Hazard ahead"
+    ],
+    "answerIndex": 0,
+    "explanation": "A yellow sign with 'H' symbol indicates a hospital is nearby. Drivers should drive quietly, avoid honking, and be prepared to yield to ambulances."
+  },
+  {
+    "question": "What does a sign showing a pedestrian crossing symbol indicate?",
+    "options": [
+      "No pedestrians allowed",
+      "Pedestrian crossing ahead",
+      "Pedestrian parking",
+      "Pedestrians only area"
+    ],
+    "answerIndex": 1,
+    "explanation": "A pedestrian crossing sign warns drivers that there is a designated pedestrian crossing ahead. Drivers must slow down and be ready to stop for pedestrians."
+  },
+  {
+    "question": "What does a sign with 'ROAD WORK AHEAD' indicate?",
+    "options": [
+      "Construction zone - proceed with caution",
+      "Road closed ahead",
+      "Workers parking area",
+      "Road maintenance office"
+    ],
+    "answerIndex": 0,
+    "explanation": "A 'ROAD WORK AHEAD' sign warns drivers of construction or maintenance work ahead. Drivers must slow down, be cautious, and follow instructions from traffic controllers."
+  },
+  {
+    "question": "What does a white bar across red circle indicate?",
+    "options": [
+      "No entry",
+      "Stop required",
+      "No parking",
+      "No stopping"
+    ],
+    "answerIndex": 0,
+    "explanation": "A white horizontal bar across a red circle indicates 'No Entry' - vehicles are not allowed to enter that road or area from that direction."
+  },
+  {
+    "question": "What does a sign with two arrows pointing opposite directions indicate?",
+    "options": [
+      "Two-way traffic ahead",
+      "U-turn prohibited",
+      "Overtaking allowed",
+      "Divided highway ahead"
+    ],
+    "answerIndex": 0,
+    "explanation": "Two arrows pointing in opposite directions indicate two-way traffic ahead, warning drivers that traffic flows in both directions on that road."
+  },
+  {
+    "question": "What does a sign showing 'NO HORN' with a diagonal line indicate?",
+    "options": [
+      "Horn mandatory",
+      "Horn prohibited in this zone",
+      "Horn repair shop",
+      "Emergency horn only"
+    ],
+    "answerIndex": 1,
+    "explanation": "A 'NO HORN' sign with diagonal line indicates a silence zone (usually near hospitals, schools, or residential areas) where honking is prohibited."
+  },
+  {
+    "question": "What does a sign with 'ZEBRA CROSSING' written indicate?",
+    "options": [
+      "Animal crossing ahead",
+      "Pedestrian crossing marked with stripes",
+      "Zoo ahead",
+      "Wildlife area"
+    ],
+    "answerIndex": 1,
+    "explanation": "A 'ZEBRA CROSSING' sign indicates a marked pedestrian crossing with black and white stripes. Vehicles must stop when pedestrians are crossing."
+  },
+  {
+    "question": "What does a sign with 'ONE WAY' arrow indicate?",
+    "options": [
+      "Turn one way only",
+      "One-way street ahead",
+      "Single lane road",
+      "Direction to one destination"
+    ],
+    "answerIndex": 1,
+    "explanation": "A 'ONE WAY' sign with arrow indicates that traffic flows in only one direction on that street. Driving against the direction is illegal and dangerous."
+  },
+  {
+    "question": "What is the speed limit in urban areas for most vehicles?",
+    "options": [
+      "40 km/h",
+      "50 km/h",
+      "60 km/h",
+      "70 km/h"
+    ],
+    "answerIndex": 1,
+    "explanation": "In urban areas, the general speed limit is 50 km/h for most vehicles, unless otherwise specified. Heavy vehicles and buses may have lower limits."
+  },
+  {
+    "question": "What is the blood alcohol limit for drivers in India?",
+    "options": [
+      "0.01%",
+      "0.03% (30 mg per 100 ml)",
+      "0.05%",
+      "0.10%"
+    ],
+    "answerIndex": 1,
+    "explanation": "The legal blood alcohol limit in India is 0.03% (30 mg per 100 ml). Driving under the influence of alcohol is a serious criminal offense with severe penalties including fines and imprisonment."
+  },
+  {
+    "question": "When should you use the left indicator?",
+    "options": [
+      "When turning left only",
+      "When turning left, changing lanes left, or pulling over",
+      "When stopping",
+      "When reversing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Left indicators must be used when turning left, changing lanes to the left, or pulling over to the left side of the road. Always signal before changing direction."
+  },
+  {
+    "question": "What should you do at a red traffic light?",
+    "options": [
+      "Slow down and proceed if clear",
+      "Stop completely and wait",
+      "Speed up to clear intersection",
+      "Turn right if no traffic"
+    ],
+    "answerIndex": 1,
+    "explanation": "At a red traffic light, you must come to a complete stop and wait behind the stop line until the light turns green. Jumping red light is a serious violation with heavy fines."
+  },
+  {
+    "question": "When overtaking, from which side should you pass?",
+    "options": [
+      "Left side",
+      "Right side",
+      "Either side",
+      "Through the middle"
+    ],
+    "answerIndex": 1,
+    "explanation": "In India, vehicles must overtake from the right side. Overtaking from the left is only allowed when the vehicle ahead is turning right. Always check mirrors and use indicators before overtaking."
+  },
+  {
+    "question": "What is the minimum age to obtain a Learner's License for a motorcycle?",
+    "options": [
+      "16 years",
+      "18 years",
+      "20 years",
+      "21 years"
+    ],
+    "answerIndex": 0,
+    "explanation": "The minimum age for obtaining a Learner's License for a motorcycle (geared or gearless) is 16 years. For cars and commercial vehicles, it's 18 years."
+  },
+  {
+    "question": "When should headlights be used?",
+    "options": [
+      "Only at night",
+      "At night, in fog, rain, or poor visibility",
+      "Only in tunnels",
+      "Only on highways"
+    ],
+    "answerIndex": 1,
+    "explanation": "Headlights must be used at night, during fog, rain, or any condition with poor visibility to ensure you can see the road and other vehicles can see you."
+  },
+  {
+    "question": "What is the fine for not wearing a helmet while riding a two-wheeler?",
+    "options": [
+      "Rs. 500",
+      "Rs. 1,000",
+      "Rs. 2,000",
+      "Rs. 5,000"
+    ],
+    "answerIndex": 1,
+    "explanation": "Not wearing a helmet while riding a two-wheeler attracts a fine of Rs. 1,000. Both rider and pillion rider must wear ISI-certified helmets. Repeat offenses may result in license suspension."
+  },
+  {
+    "question": "When can you park your vehicle?",
+    "options": [
+      "Anywhere on the road",
+      "Only in designated parking areas",
+      "On footpaths",
+      "In front of fire hydrants"
+    ],
+    "answerIndex": 1,
+    "explanation": "Vehicles should only be parked in designated parking areas. Parking in no-parking zones, on footpaths, near fire hydrants, or blocking traffic is illegal and attracts fines."
+  },
+  {
+    "question": "What should you do when an ambulance with siren approaches?",
+    "options": [
+      "Continue driving normally",
+      "Pull over to the left and stop",
+      "Speed up to get ahead",
+      "Turn right immediately"
+    ],
+    "answerIndex": 1,
+    "explanation": "When an emergency vehicle (ambulance, fire truck, police) with siren approaches, you must pull over to the left side of the road and stop, allowing it to pass. Not giving way is a serious offense."
+  },
+  {
+    "question": "What does a yellow light at a traffic signal mean?",
+    "options": [
+      "Stop immediately",
+      "Proceed with caution",
+      "Slow down and prepare to stop if safe",
+      "Speed up to clear intersection"
+    ],
+    "answerIndex": 2,
+    "explanation": "A yellow (amber) light means you should slow down and prepare to stop. Only proceed if you cannot stop safely before the intersection. It is not a signal to speed up."
+  },
+  {
+    "question": "What is the penalty for using a mobile phone while driving?",
+    "options": [
+      "Rs. 1,000",
+      "Rs. 2,000",
+      "Rs. 5,000",
+      "Rs. 10,000"
+    ],
+    "answerIndex": 2,
+    "explanation": "Using a mobile phone while driving (talking, texting, or any use) attracts a fine of Rs. 5,000. Hands-free devices are allowed but not recommended as they can still distract."
+  },
+  {
+    "question": "When should you use hazard lights?",
+    "options": [
+      "When driving in rain",
+      "When vehicle breaks down or in emergency situations only",
+      "When parking",
+      "When driving slowly"
+    ],
+    "answerIndex": 1,
+    "explanation": "Hazard lights (all indicators blinking) should only be used when the vehicle breaks down, in emergency situations, or when warning other drivers of a hazard ahead. Using them while driving is illegal."
+  },
+  {
+    "question": "What is the fine for jumping a red light?",
+    "options": [
+      "Rs. 2,000",
+      "Rs. 5,000",
+      "Rs. 1,000",
+      "Rs. 3,000"
+    ],
+    "answerIndex": 1,
+    "explanation": "Jumping or running a red light attracts a fine of Rs. 5,000. This is a serious traffic violation that can cause accidents and endanger lives."
+  },
+  {
+    "question": "What should you do at a pedestrian zebra crossing?",
+    "options": [
+      "Honk and speed up",
+      "Stop and give way to pedestrians",
+      "Continue if no pedestrians visible",
+      "Drive around pedestrians"
+    ],
+    "answerIndex": 1,
+    "explanation": "At a zebra crossing (marked pedestrian crossing), vehicles must stop and give way to pedestrians. Pedestrians have the right of way at these crossings."
+  },
+  {
+    "question": "What is the minimum distance to maintain from the vehicle ahead?",
+    "options": [
+      "1 meter",
+      "3 seconds gap at all speeds",
+      "Half the speed in meters",
+      "No specific distance"
+    ],
+    "answerIndex": 1,
+    "explanation": "The safe following distance is maintaining at least a 3-second gap from the vehicle ahead. This allows time to react and stop safely in case of emergency."
+  },
+  {
+    "question": "What does 'No Entry' sign mean?",
+    "options": [
+      "Slow down",
+      "Entry prohibited from this direction",
+      "One way street",
+      "Parking not allowed"
+    ],
+    "answerIndex": 1,
+    "explanation": "A 'No Entry' sign (red circle with white horizontal bar) prohibits entry from that direction. Vehicles must not enter that road or area from where the sign is visible."
+  },
+  {
+    "question": "When should you use the horn?",
+    "options": [
+      "Frequently to alert others",
+      "Only when necessary to prevent accidents",
+      "When driving in silence zones",
+      "When parking"
+    ],
+    "answerIndex": 1,
+    "explanation": "Horn should be used sparingly and only when necessary to alert other road users of your presence to prevent accidents. Unnecessary honking is illegal and creates noise pollution."
+  },
+  {
+    "question": "What is the fine for driving without a valid driving license?",
+    "options": [
+      "Rs. 2,000",
+      "Rs. 5,000",
+      "Rs. 1,000",
+      "Rs. 3,000"
+    ],
+    "answerIndex": 1,
+    "explanation": "Driving without a valid driving license attracts a fine of Rs. 5,000. The license must be valid and appropriate for the vehicle category being driven."
+  },
+  {
+    "question": "What should you do when approaching a roundabout?",
+    "options": [
+      "Speed up",
+      "Yield to traffic already in the roundabout",
+      "Enter without checking",
+      "Stop in the middle"
+    ],
+    "answerIndex": 1,
+    "explanation": "At a roundabout, you must yield to traffic already circulating in the roundabout. Enter only when there is a safe gap, and use indicators when exiting."
+  },
+  {
+    "question": "What does a solid white line in the middle of the road indicate?",
+    "options": [
+      "Overtaking allowed",
+      "No overtaking - do not cross",
+      "Parking allowed",
+      "Speed limit zone"
+    ],
+    "answerIndex": 1,
+    "explanation": "A solid white line indicates that overtaking is prohibited and you must not cross the line. It is used where visibility is limited or where crossing is dangerous."
+  },
+  {
+    "question": "What do broken white lines indicate?",
+    "options": [
+      "No overtaking",
+      "Overtaking allowed when safe",
+      "Stop required",
+      "Parking prohibited"
+    ],
+    "answerIndex": 1,
+    "explanation": "Broken white lines indicate that overtaking is allowed when safe and visibility is good. Always check mirrors and use indicators before overtaking."
+  },
+  {
+    "question": "What does a yellow line along the road edge indicate?",
+    "options": [
+      "No parking zone",
+      "Parking allowed",
+      "One-way street",
+      "Speed limit zone"
+    ],
+    "answerIndex": 0,
+    "explanation": "A yellow line along the road edge indicates a no-parking zone. Parking in this area is prohibited and may result in fines or vehicle being towed."
+  },
+  {
+    "question": "What does a stop line before an intersection indicate?",
+    "options": [
+      "Optional stop",
+      "Must stop before this line when signal is red",
+      "Parking line",
+      "Speed check point"
+    ],
+    "answerIndex": 1,
+    "explanation": "A stop line (white line before intersection) indicates where vehicles must stop when the traffic signal is red. Stopping beyond this line is a violation."
+  },
+  {
+    "question": "What do diagonal white stripes (hatched markings) indicate?",
+    "options": [
+      "Parking area",
+      "Area you must not enter or park",
+      "Speed bump ahead",
+      "Crosswalk ahead"
+    ],
+    "answerIndex": 1,
+    "explanation": "Diagonal white stripes (hatched markings) indicate an area that vehicles must not enter or park in. These are usually found at intersections or channelized areas."
+  },
+  {
+    "question": "What does a double solid white/yellow line indicate?",
+    "options": [
+      "Overtaking allowed",
+      "No overtaking from either side",
+      "Parking allowed",
+      "Speed limit change"
+    ],
+    "answerIndex": 1,
+    "explanation": "A double solid line (white or yellow) indicates strict prohibition of overtaking from either direction. It is used on roads with high traffic or limited visibility."
+  },
+  {
+    "question": "What does a yellow box at an intersection indicate?",
+    "options": [
+      "Parking area",
+      "Do not stop or park in this box",
+      "Speed limit zone",
+      "Turn around area"
+    ],
+    "answerIndex": 1,
+    "explanation": "A yellow box (yellow box junction) indicates that you must not enter this area unless your exit is clear. Blocking the box can cause traffic congestion."
+  },
+  {
+    "question": "What do zigzag lines near a crossing indicate?",
+    "options": [
+      "Parking allowed",
+      "No parking or overtaking near crossing",
+      "Speed bump",
+      "Construction zone"
+    ],
+    "answerIndex": 1,
+    "explanation": "Zigzag lines near pedestrian crossings or school zones indicate no parking or overtaking. Vehicles must drive slowly and be prepared to stop for pedestrians."
+  },
+  {
+    "question": "What does a broken yellow line in the middle of the road indicate?",
+    "options": [
+      "No overtaking",
+      "Overtaking allowed with caution",
+      "Parking line",
+      "Speed limit"
+    ],
+    "answerIndex": 1,
+    "explanation": "A broken yellow line allows overtaking when safe. Always check mirrors, use indicators, and ensure there is enough space before overtaking."
+  },
+  {
+    "question": "What does a white arrow on the road pointing straight indicate?",
+    "options": [
+      "Turn left only",
+      "Go straight only",
+      "Turn right only",
+      "No specific direction"
+    ],
+    "answerIndex": 1,
+    "explanation": "A white arrow on the road indicates the mandatory direction of travel for that lane. Following these arrows helps maintain smooth traffic flow."
+  },
+  {
+    "question": "What should you do when another vehicle signals to change lanes?",
+    "options": [
+      "Speed up to block them",
+      "Slow down and give way if safe",
+      "Honk continuously",
+      "Follow closely"
+    ],
+    "answerIndex": 1,
+    "explanation": "When another vehicle signals to change lanes, you should slow down and give way if it is safe to do so. This promotes courteous driving and reduces accidents."
+  },
+  {
+    "question": "What should you do after overtaking another vehicle?",
+    "options": [
+      "Slow down immediately",
+      "Return to left lane when safe and use indicators",
+      "Continue in right lane",
+      "Stop ahead"
+    ],
+    "answerIndex": 1,
+    "explanation": "After overtaking, you should return to the left lane when safe and use indicators to signal your lane change. Do not cut off the vehicle you overtook."
+  },
+  {
+    "question": "What is considered discourteous driving?",
+    "options": [
+      "Following traffic rules",
+      "Tailgating, unnecessary honking, or aggressive driving",
+      "Using indicators",
+      "Maintaining safe distance"
+    ],
+    "answerIndex": 1,
+    "explanation": "Discourteous driving includes tailgating, unnecessary honking, aggressive lane changing, blocking traffic, and not giving way when appropriate. Always drive with courtesy and patience."
+  },
+  {
+    "question": "When should you flash your headlights?",
+    "options": [
+      "To intimidate other drivers",
+      "To alert other drivers of your presence or give way signal",
+      "When parking",
+      "When reversing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Headlight flashing should be used sparingly to alert other drivers of your presence, especially at night, or to signal giving way. Do not use it to intimidate or force right of way."
+  },
+  {
+    "question": "What should you do if you miss your turn or exit?",
+    "options": [
+      "Reverse immediately",
+      "Make sudden U-turn",
+      "Continue to next safe turning point and turn around",
+      "Stop in middle of road"
+    ],
+    "answerIndex": 2,
+    "explanation": "If you miss your turn or exit, continue to the next safe turning point or exit and turn around properly. Never reverse, make sudden U-turns, or stop in the middle of the road."
+  },
+  {
+    "question": "What should you do when entering a main road from a side road?",
+    "options": [
+      "Enter immediately",
+      "Yield to traffic on main road",
+      "Honk and enter",
+      "Speed up to enter"
+    ],
+    "answerIndex": 1,
+    "explanation": "When entering a main road from a side road, you must yield to traffic already on the main road. Enter only when there is a safe gap and you will not obstruct traffic."
+  },
+  {
+    "question": "What should you do when you see a learner driver with 'L' board?",
+    "options": [
+      "Honk impatiently",
+      "Be patient and give extra space",
+      "Overtake aggressively",
+      "Follow closely"
+    ],
+    "answerIndex": 1,
+    "explanation": "When you see a learner driver with 'L' board, be patient, give extra space, and avoid aggressive driving. Everyone was a learner once, and courtesy helps them learn safely."
+  },
+  {
+    "question": "What should you do when your vehicle breaks down?",
+    "options": [
+      "Leave it in the middle of the road",
+      "Move to left side, use hazard lights, and place warning triangle",
+      "Park anywhere",
+      "Continue driving"
+    ],
+    "answerIndex": 1,
+    "explanation": "If your vehicle breaks down, move it to the left side of the road, turn on hazard lights, place a warning triangle 50 meters behind, and call for help. Stay in a safe location."
+  },
+  {
+    "question": "What should you do when approaching a narrow bridge?",
+    "options": [
+      "Speed up to cross first",
+      "Slow down, check for oncoming traffic, and give way if needed",
+      "Honk continuously",
+      "Block the bridge"
+    ],
+    "answerIndex": 1,
+    "explanation": "When approaching a narrow bridge, slow down, check for oncoming traffic, and give way to vehicles already on the bridge or approaching from the opposite side if necessary."
+  },
+  {
+    "question": "What is the proper way to thank another driver?",
+    "options": [
+      "Honk repeatedly",
+      "Use hazard lights briefly or hand gesture",
+      "Flash headlights aggressively",
+      "Stop your vehicle"
+    ],
+    "answerIndex": 1,
+    "explanation": "You can thank another driver by briefly using hazard lights, a polite hand gesture, or a nod. Avoid aggressive flashing or unnecessary honking."
+  },
+  {
+    "question": "When should you NOT overtake?",
+    "options": [
+      "When road is clear",
+      "At curves, bridges, intersections, or where visibility is limited",
+      "On straight roads",
+      "In clear weather"
+    ],
+    "answerIndex": 1,
+    "explanation": "You should never overtake at curves, bridges, intersections, railway crossings, or anywhere with limited visibility. Overtaking in these areas is extremely dangerous and illegal."
+  },
+  {
+    "question": "What should you check before overtaking?",
+    "options": [
+      "Only front view",
+      "Front view, mirrors, blind spots, and oncoming traffic",
+      "Only mirrors",
+      "Nothing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Before overtaking, check front view, rearview mirror, side mirrors, blind spots, and ensure there is no oncoming traffic. Only overtake when it is completely safe."
+  },
+  {
+    "question": "What should you do when being overtaken?",
+    "options": [
+      "Speed up to prevent overtaking",
+      "Slow down slightly and maintain your lane",
+      "Move to right lane",
+      "Stop immediately"
+    ],
+    "answerIndex": 1,
+    "explanation": "When another vehicle is overtaking you, slow down slightly, maintain your lane, and do not speed up. This allows the overtaking maneuver to complete safely."
+  },
+  {
+    "question": "Can you overtake from the left side?",
+    "options": [
+      "Always",
+      "Never",
+      "Only when vehicle ahead is turning right",
+      "Only on highways"
+    ],
+    "answerIndex": 2,
+    "explanation": "Overtaking from the left is generally prohibited. It is only allowed when the vehicle ahead is turning right and has signaled so. Always prefer overtaking from the right."
+  },
+  {
+    "question": "What does 'No Overtaking' sign mean?",
+    "options": [
+      "Overtaking allowed",
+      "Overtaking prohibited until sign is lifted",
+      "Overtaking allowed at night",
+      "Speed limit zone"
+    ],
+    "answerIndex": 1,
+    "explanation": "A 'No Overtaking' sign prohibits overtaking from that point until the sign is lifted or you see an 'Overtaking Allowed' sign. Violation attracts heavy fines."
+  },
+  {
+    "question": "When overtaking a large vehicle, what should you do?",
+    "options": [
+      "Overtake quickly",
+      "Give extra space and time, check blind spots",
+      "Overtake from left",
+      "Follow closely"
+    ],
+    "answerIndex": 1,
+    "explanation": "When overtaking large vehicles (trucks, buses), give extra space and time. Large vehicles have larger blind spots, so ensure you are visible before overtaking."
+  },
+  {
+    "question": "What should you do after completing an overtaking maneuver?",
+    "options": [
+      "Stay in right lane",
+      "Return to left lane immediately after overtaking",
+      "Speed up and maintain right lane",
+      "Stop ahead"
+    ],
+    "answerIndex": 1,
+    "explanation": "After overtaking, return to the left lane as soon as it is safe to do so. Use indicators and do not cut off the vehicle you just overtook."
+  },
+  {
+    "question": "Can you overtake at a pedestrian crossing?",
+    "options": [
+      "Yes, if no pedestrians",
+      "No, overtaking is prohibited at pedestrian crossings",
+      "Only at night",
+      "Only on weekends"
+    ],
+    "answerIndex": 1,
+    "explanation": "Overtaking is strictly prohibited at pedestrian crossings, intersections, and near school zones. These areas require extra caution and slower speeds."
+  },
+  {
+    "question": "What is the minimum safe distance to maintain while overtaking?",
+    "options": [
+      "1 meter",
+      "At least 1.5 meters side clearance",
+      "No specific distance",
+      "As close as possible"
+    ],
+    "answerIndex": 1,
+    "explanation": "While overtaking, maintain at least 1.5 meters of side clearance from the vehicle being overtaken. This provides a safety buffer in case of sudden movements."
+  },
+  {
+    "question": "Should you overtake when approaching a hill crest?",
+    "options": [
+      "Yes, if road looks clear",
+      "No, never overtake at hill crests due to limited visibility",
+      "Only during day",
+      "Only on weekends"
+    ],
+    "answerIndex": 1,
+    "explanation": "Never overtake at hill crests as visibility is severely limited. You cannot see oncoming traffic until it's too late, making it extremely dangerous."
+  },
+  {
+    "question": "What is the speed limit on national highways for cars?",
+    "options": [
+      "80 km/h",
+      "100 km/h",
+      "120 km/h",
+      "No limit"
+    ],
+    "answerIndex": 1,
+    "explanation": "On national highways, the speed limit for cars is typically 100 km/h, though it may vary by state and road conditions. Always follow posted speed limit signs."
+  },
+  {
+    "question": "What is the speed limit in school zones?",
+    "options": [
+      "50 km/h",
+      "25 km/h",
+      "40 km/h",
+      "30 km/h"
+    ],
+    "answerIndex": 1,
+    "explanation": "In school zones, the speed limit is usually 25 km/h to protect children. Drivers must reduce speed and be extra vigilant for children crossing or playing nearby."
+  },
+  {
+    "question": "What is the speed limit for heavy vehicles on highways?",
+    "options": [
+      "100 km/h",
+      "80 km/h",
+      "60 km/h",
+      "90 km/h"
+    ],
+    "answerIndex": 1,
+    "explanation": "Heavy vehicles (trucks, buses) have a lower speed limit of 80 km/h on highways due to their size, weight, and longer stopping distance."
+  },
+  {
+    "question": "What should you do when driving in fog?",
+    "options": [
+      "Drive at normal speed",
+      "Reduce speed significantly and use fog lights",
+      "Speed up to get through quickly",
+      "Use high beam"
+    ],
+    "answerIndex": 1,
+    "explanation": "In fog, reduce speed significantly (often to 30-40 km/h or lower), use fog lights or low beam headlights, and maintain safe following distance. High beam reflects off fog and reduces visibility."
+  },
+  {
+    "question": "What is the penalty for overspeeding?",
+    "options": [
+      "Rs. 500",
+      "Rs. 1,000 - 2,000",
+      "Rs. 5,000",
+      "No penalty"
+    ],
+    "answerIndex": 1,
+    "explanation": "Overspeeding (exceeding speed limits) attracts a fine of Rs. 1,000 - 2,000. Repeat offenses may result in higher penalties and license suspension."
+  },
+  {
+    "question": "What should you do when driving in rain?",
+    "options": [
+      "Drive at normal speed",
+      "Reduce speed and increase following distance",
+      "Speed up to avoid getting wet",
+      "Use high beam"
+    ],
+    "answerIndex": 1,
+    "explanation": "In rain, reduce speed, increase following distance (at least 4-5 seconds), use headlights, and avoid sudden braking or steering. Wet roads have reduced traction."
+  },
+  {
+    "question": "What is the speed limit in residential areas?",
+    "options": [
+      "50 km/h",
+      "30 km/h",
+      "40 km/h",
+      "60 km/h"
+    ],
+    "answerIndex": 1,
+    "explanation": "In residential areas, the speed limit is typically 30 km/h to protect residents, especially children and elderly, who may be walking or playing nearby."
+  },
+  {
+    "question": "Can you exceed speed limit to overtake?",
+    "options": [
+      "Yes, always",
+      "No, you must not exceed speed limit even while overtaking",
+      "Only at night",
+      "Only on highways"
+    ],
+    "answerIndex": 1,
+    "explanation": "You must not exceed the posted speed limit even while overtaking. Speed limits are set for safety reasons and must be followed at all times."
+  },
+  {
+    "question": "What should you do when approaching a speed breaker?",
+    "options": [
+      "Speed up and jump over",
+      "Reduce speed before reaching it",
+      "Ignore it",
+      "Drive around it"
+    ],
+    "answerIndex": 1,
+    "explanation": "When approaching a speed breaker, reduce speed well before reaching it to minimize impact and prevent damage to your vehicle. Drive over it slowly and smoothly."
+  },
+  {
+    "question": "What is adaptive speed?",
+    "options": [
+      "Fixed speed",
+      "Adjusting speed based on road, weather, and traffic conditions",
+      "Maximum speed always",
+      "Minimum speed"
+    ],
+    "answerIndex": 1,
+    "explanation": "Adaptive speed means adjusting your driving speed based on road conditions, weather, traffic, visibility, and vehicle condition. Safe driving requires adapting speed to conditions."
+  },
+  {
+    "question": "When should you use high beam headlights?",
+    "options": [
+      "Always at night",
+      "On unlit roads when no oncoming traffic",
+      "In city areas",
+      "Behind other vehicles"
+    ],
+    "answerIndex": 1,
+    "explanation": "Use high beam only on unlit roads when there is no oncoming traffic. Switch to low beam when approaching or following other vehicles to avoid blinding drivers."
+  },
+  {
+    "question": "What should you do when oncoming vehicle uses high beam?",
+    "options": [
+      "Flash your high beam back",
+      "Slow down, look to left side of road, and avoid direct glare",
+      "Speed up",
+      "Stop in middle"
+    ],
+    "answerIndex": 1,
+    "explanation": "When oncoming vehicle uses high beam, slow down, look slightly to the left side of your lane to avoid direct glare, and avoid retaliating with high beam."
+  },
+  {
+    "question": "What is the safe following distance at night?",
+    "options": [
+      "Same as day",
+      "Increase following distance at night",
+      "Reduce distance",
+      "No specific distance"
+    ],
+    "answerIndex": 1,
+    "explanation": "At night, increase your following distance (4-5 seconds) because visibility is reduced and reaction time may be slower. This gives more time to react to sudden stops."
+  },
+  {
+    "question": "What should you check before driving at night?",
+    "options": [
+      "Only headlights",
+      "Headlights, taillights, indicators, and all lights",
+      "Only engine",
+      "Only fuel"
+    ],
+    "answerIndex": 1,
+    "explanation": "Before driving at night, check that all lights are working: headlights (high and low beam), taillights, brake lights, indicators, and number plate light."
+  },
+  {
+    "question": "Why is driving at night more dangerous?",
+    "options": [
+      "No difference",
+      "Reduced visibility, driver fatigue, and increased risk",
+      "Less traffic",
+      "Better roads"
+    ],
+    "answerIndex": 1,
+    "explanation": "Night driving is more dangerous due to reduced visibility, driver fatigue, difficulty judging distances, and increased risk of encountering intoxicated drivers or animals."
+  },
+  {
+    "question": "What should you do when you see children playing near the road?",
+    "options": [
+      "Speed up to pass quickly",
+      "Slow down, be extra cautious, and be ready to stop",
+      "Honk loudly",
+      "Ignore them"
+    ],
+    "answerIndex": 1,
+    "explanation": "When you see children near the road, slow down significantly, be extra cautious, and be ready to stop. Children may suddenly run onto the road without warning."
+  },
+  {
+    "question": "What should you do when you see animals on the road?",
+    "options": [
+      "Speed up to scare them away",
+      "Slow down, honk gently, and wait for them to clear",
+      "Drive through them",
+      "Stop and wait"
+    ],
+    "answerIndex": 1,
+    "explanation": "When animals are on the road, slow down, honk gently (if needed), and wait for them to clear. Do not try to speed past or drive through them as they may panic and cause accidents."
+  },
+  {
+    "question": "What should you do when you see oil or water on the road?",
+    "options": [
+      "Drive normally",
+      "Slow down and avoid sudden steering or braking",
+      "Speed up",
+      "Stop immediately"
+    ],
+    "answerIndex": 1,
+    "explanation": "Oil or water on the road reduces traction. Slow down, avoid sudden steering or braking, and drive smoothly. Be especially cautious on turns."
+  },
+  {
+    "question": "What should you do when approaching a blind corner?",
+    "options": [
+      "Speed up",
+      "Slow down, honk, and be prepared to stop",
+      "Drive normally",
+      "Overtake"
+    ],
+    "answerIndex": 1,
+    "explanation": "When approaching a blind corner, reduce speed, honk to alert oncoming traffic (if allowed), stay in your lane, and be prepared to stop if necessary."
+  },
+  {
+    "question": "What should you do when you see a vehicle ahead with hazard lights on?",
+    "options": [
+      "Speed up and overtake",
+      "Slow down and be cautious - vehicle may be broken down or in emergency",
+      "Ignore it",
+      "Honk continuously"
+    ],
+    "answerIndex": 1,
+    "explanation": "When you see hazard lights, the vehicle ahead may be broken down, in an emergency, or slowing down suddenly. Reduce speed and proceed with caution, giving it space."
+  },
+  {
+    "question": "What should you do when driving behind a large vehicle?",
+    "options": [
+      "Follow closely",
+      "Maintain safe distance and avoid staying in blind spot",
+      "Overtake immediately",
+      "Flash headlights"
+    ],
+    "answerIndex": 1,
+    "explanation": "When behind a large vehicle, maintain a safe following distance and avoid staying in their blind spots. Large vehicles have limited rear visibility."
+  },
+  {
+    "question": "What should you do when you see road work ahead?",
+    "options": [
+      "Speed up to pass quickly",
+      "Slow down, follow traffic controller instructions, and watch for workers",
+      "Ignore signs",
+      "Honk continuously"
+    ],
+    "answerIndex": 1,
+    "explanation": "At road work sites, reduce speed, watch for warning signs, follow traffic controller instructions, and be extra cautious for workers and equipment."
+  },
+  {
+    "question": "What should you do when you see a vehicle reversing?",
+    "options": [
+      "Overtake from behind",
+      "Stop and wait, or pass from side if safe and signaled",
+      "Speed up",
+      "Honk aggressively"
+    ],
+    "answerIndex": 1,
+    "explanation": "When you see a vehicle reversing, stop and wait, or pass from the side only if it's safe and the driver has signaled. Never overtake a reversing vehicle from behind."
+  },
+  {
+    "question": "What should you do when you see a cyclist ahead?",
+    "options": [
+      "Overtake closely",
+      "Give sufficient space (at least 1.5 meters) when overtaking",
+      "Honk to move them",
+      "Follow closely"
+    ],
+    "answerIndex": 1,
+    "explanation": "When overtaking cyclists, give at least 1.5 meters of space and reduce speed. Cyclists are vulnerable road users and need extra consideration."
+  },
+  {
+    "question": "What should you do when driving in strong wind?",
+    "options": [
+      "Drive normally",
+      "Reduce speed and keep both hands on steering wheel",
+      "Speed up",
+      "Stop immediately"
+    ],
+    "answerIndex": 1,
+    "explanation": "In strong wind, reduce speed, keep both hands firmly on the steering wheel, and be especially cautious when overtaking large vehicles or crossing bridges."
+  },
+  {
+    "question": "What should you do in case of brake failure?",
+    "options": [
+      "Panic and jump out",
+      "Downshift, use handbrake gradually, and steer to safe area",
+      "Speed up",
+      "Close eyes"
+    ],
+    "answerIndex": 1,
+    "explanation": "If brakes fail, downshift to lower gears to slow down, use handbrake gradually (not suddenly), steer to a safe area, and try to stop using engine braking."
+  },
+  {
+    "question": "What should you do if your vehicle catches fire?",
+    "options": [
+      "Continue driving",
+      "Stop immediately, turn off engine, evacuate passengers, and call fire department",
+      "Pour water if available",
+      "Open all windows"
+    ],
+    "answerIndex": 1,
+    "explanation": "If vehicle catches fire, stop immediately, turn off engine, evacuate all passengers to safe distance, and call fire department. Do not try to extinguish if fire is large."
+  },
+  {
+    "question": "What should you do if you have a tire blowout?",
+    "options": [
+      "Brake hard immediately",
+      "Hold steering wheel firmly, do not brake hard, slow down gradually, and pull over",
+      "Speed up",
+      "Turn sharply"
+    ],
+    "answerIndex": 1,
+    "explanation": "If tire blows out, hold steering wheel firmly, do not brake hard suddenly, slow down gradually by releasing accelerator, and pull over to safe location when speed is reduced."
+  },
+  {
+    "question": "What should you do if you witness an accident?",
+    "options": [
+      "Continue driving",
+      "Stop safely, provide help if trained, call emergency services, and give way to ambulances",
+      "Take photos only",
+      "Ignore it"
+    ],
+    "answerIndex": 1,
+    "explanation": "If you witness an accident, stop safely, provide first aid if trained, call emergency services (108/100), and clear way for ambulances. Do not move injured unless in immediate danger."
+  },
+  {
+    "question": "What should you do if your accelerator gets stuck?",
+    "options": [
+      "Panic",
+      "Shift to neutral, apply brakes, and steer to safe area",
+      "Speed up",
+      "Turn off engine immediately"
+    ],
+    "answerIndex": 1,
+    "explanation": "If accelerator gets stuck, shift to neutral immediately (this disengages engine from wheels), apply brakes to slow down, and steer to a safe area to stop."
+  },
+  {
+    "question": "What is the purpose of the clutch in a manual transmission vehicle?",
+    "options": [
+      "To increase speed",
+      "To engage and disengage power from engine to transmission",
+      "To brake",
+      "To steer"
+    ],
+    "answerIndex": 1,
+    "explanation": "The clutch connects and disconnects the engine's power to the transmission, allowing gear changes. Pressing the clutch pedal disengages power, releasing it engages power."
+  },
+  {
+    "question": "What should you check before starting the engine?",
+    "options": [
+      "Only fuel",
+      "Fuel, oil, water, tires, lights, and mirrors",
+      "Only engine",
+      "Nothing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Before starting, check fuel level, engine oil, coolant/water, tire pressure and condition, all lights, mirrors, and ensure parking brake is released."
+  },
+  {
+    "question": "What is the purpose of the handbrake (parking brake)?",
+    "options": [
+      "To slow down while driving",
+      "To park vehicle and prevent it from rolling",
+      "To accelerate",
+      "To steer"
+    ],
+    "answerIndex": 1,
+    "explanation": "The handbrake (parking brake) is used to secure the vehicle when parked, especially on inclines, to prevent it from rolling. It should be engaged before leaving the vehicle."
+  },
+  {
+    "question": "What should you do when driving downhill?",
+    "options": [
+      "Put in neutral and coast",
+      "Use lower gear for engine braking and control speed",
+      "Speed up",
+      "Use brakes continuously"
+    ],
+    "answerIndex": 1,
+    "explanation": "When driving downhill, shift to lower gear to use engine braking, which helps control speed and reduces brake wear. Avoid continuous braking which can cause brake fade."
+  },
+  {
+    "question": "What is engine braking?",
+    "options": [
+      "Pressing accelerator",
+      "Using lower gears to slow down without using brakes",
+      "Using handbrake",
+      "Turning off engine"
+    ],
+    "answerIndex": 1,
+    "explanation": "Engine braking means downshifting to lower gears, which uses engine compression to slow down the vehicle without using brakes. This is useful on long descents."
+  },
+  {
+    "question": "What should you check in your mirrors?",
+    "options": [
+      "Nothing",
+      "Traffic behind and beside you before turning, changing lanes, or stopping",
+      "Only when parking",
+      "Only at night"
+    ],
+    "answerIndex": 1,
+    "explanation": "Check mirrors regularly to be aware of traffic behind and beside you. Always check before turning, changing lanes, stopping, or making any maneuver."
+  },
+  {
+    "question": "What is the purpose of the accelerator pedal?",
+    "options": [
+      "To brake",
+      "To control engine speed and vehicle acceleration",
+      "To steer",
+      "To change gears"
+    ],
+    "answerIndex": 1,
+    "explanation": "The accelerator pedal controls the engine's throttle, which determines how much fuel/air enters the engine, thus controlling engine speed and vehicle acceleration."
+  },
+  {
+    "question": "What should you do if the steering wheel feels loose?",
+    "options": [
+      "Continue driving",
+      "Stop safely, check steering components, and get vehicle checked by mechanic",
+      "Speed up",
+      "Ignore it"
+    ],
+    "answerIndex": 1,
+    "explanation": "If steering feels loose or unresponsive, stop safely, check for visible issues, and have the vehicle inspected by a mechanic immediately. Loose steering is dangerous."
+  },
+  {
+    "question": "What is the purpose of ABS (Anti-lock Braking System)?",
+    "options": [
+      "To make brakes weaker",
+      "To prevent wheel lock-up during hard braking and maintain steering control",
+      "To increase speed",
+      "To reduce fuel"
+    ],
+    "answerIndex": 1,
+    "explanation": "ABS prevents wheels from locking during hard braking, allowing the driver to maintain steering control and reduce stopping distance on slippery surfaces."
+  },
+  {
+    "question": "When should you check your vehicle's fluid levels?",
+    "options": [
+      "Never",
+      "Regularly (weekly or as per manual) and before long trips",
+      "Only when problems occur",
+      "Only at service station"
+    ],
+    "answerIndex": 1,
+    "explanation": "Check fluid levels (engine oil, coolant, brake fluid, power steering) regularly as per manufacturer's manual, typically weekly, and always before long trips."
+  }
+]

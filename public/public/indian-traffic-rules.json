@@ -1,0 +1,355 @@
+[
+  {
+    "Rule": "Driving Without License",
+    "Description": "Operating a motor vehicle without a valid driving license is a serious offense under the Motor Vehicles Act 1988.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 181 of MV Act",
+    "Notes": "First offense: Rs. 5,000. Subsequent offenses may result in higher penalties and possible imprisonment.",
+    "State Variations": "Some states may impose additional penalties. Check local RTO guidelines."
+  },
+  {
+    "Rule": "Driving Without Valid Registration Certificate (RC)",
+    "Description": "Driving a vehicle without a valid Registration Certificate or with an expired RC is illegal.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 192 of MV Act",
+    "Notes": "RC must be renewed before expiry. Driving with expired RC can result in vehicle impoundment.",
+    "State Variations": "Penalties may vary by state. Some states charge Rs. 2,000 for first offense."
+  },
+  {
+    "Rule": "Driving Without Insurance",
+    "Description": "Third-party insurance is mandatory for all motor vehicles in India. Driving without valid insurance is a punishable offense.",
+    "Fine Amount": "Rs. 2,000",
+    "Section": "Section 196 of MV Act",
+    "Notes": "Third-party insurance is compulsory. Comprehensive insurance is recommended for better coverage.",
+    "State Variations": "Standard across all states. Vehicle may be impounded if insurance is not valid."
+  },
+  {
+    "Rule": "Driving Without PUC Certificate",
+    "Description": "Pollution Under Control (PUC) certificate is mandatory. Driving without a valid PUC certificate attracts penalties.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 190(2) of MV Act",
+    "Notes": "PUC certificate must be renewed periodically. For BS-IV vehicles: every 6 months, for BS-VI: every year.",
+    "State Variations": "Fine is uniform across India. Certificate can be obtained from authorized PUC centers."
+  },
+  {
+    "Rule": "Overspeeding",
+    "Description": "Exceeding the prescribed speed limits on roads. Speed limits vary by road type and vehicle category.",
+    "Fine Amount": "Rs. 1,000 - 2,000",
+    "Section": "Section 183 of MV Act",
+    "Notes": "Speed limits: Urban areas - 50 km/h, Highways - 80-100 km/h depending on vehicle type. Heavy vehicles have lower limits.",
+    "StateVariations": "Penalties may vary. Some states impose Rs. 2,000 for first offense, Rs. 4,000 for repeat offenses."
+  },
+  {
+    "Rule": "Driving Under Influence (DUI)",
+    "Description": "Driving under the influence of alcohol or drugs is a serious criminal offense with severe penalties.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 185 of MV Act",
+    "Notes": "Blood alcohol limit: 0.03% (30 mg per 100 ml). First offense: Rs. 10,000 fine + 6 months imprisonment. Repeat offense: Rs. 15,000 + 2 years imprisonment.",
+    "StateVariations": "Penalties are uniform across India. License may be suspended or cancelled."
+  },
+  {
+    "Rule": "Not Wearing Seat Belt",
+    "Description": "Drivers and front-seat passengers must wear seat belts while the vehicle is in motion.",
+    "Fine Amount": "Rs. 1,000",
+    "Section": "Section 194B of MV Act",
+    "Notes": "Applicable to driver and front-seat passenger. Not wearing seat belt is a traffic violation.",
+    "StateVariations": "Standard fine across all states. Some states may impose additional penalties."
+  },
+  {
+    "Rule": "Not Wearing Helmet (Two-Wheeler)",
+    "Description": "Riding a two-wheeler without a helmet is mandatory for both driver and pillion rider.",
+    "Fine Amount": "Rs. 1,000",
+    "Section": "Section 194D of MV Act",
+    "Notes": "Helmet must be ISI certified. Both rider and pillion must wear helmets. License may be suspended for repeat offenses.",
+    "StateVariations": "Fine is Rs. 1,000. Some states may suspend license for 3 months on repeat offense."
+  },
+  {
+    "Rule": "Using Mobile Phone While Driving",
+    "Description": "Using a mobile phone while driving is prohibited and attracts penalties.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 184 of MV Act",
+    "Notes": "Using mobile phone includes talking, texting, or any other use. Hands-free devices are allowed but not recommended.",
+    "StateVariations": "First offense: Rs. 5,000. Repeat offense: Rs. 10,000. License may be suspended."
+  },
+  {
+    "Rule": "Jumping Red Light",
+    "Description": "Violating traffic signals, especially jumping red lights, is a serious traffic offense.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 184 of MV Act",
+    "Notes": "Red light violation is dangerous and can cause accidents. Fine is Rs. 5,000 for first offense.",
+    "StateVariations": "Standard across India. Some states may impose higher penalties for repeat offenses."
+  },
+  {
+    "Rule": "Wrong Side Driving",
+    "Description": "Driving on the wrong side of the road or against traffic flow is illegal and extremely dangerous.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 184 of MV Act",
+    "Notes": "Wrong side driving is a major cause of accidents. License may be suspended for 3 months.",
+    "StateVariations": "Penalty is uniform. Repeat offenses may result in license cancellation."
+  },
+  {
+    "Rule": "Driving Without FASTag",
+    "Description": "FASTag is mandatory for all vehicles on national highways. Driving without FASTag or with insufficient balance attracts penalties.",
+    "Fine Amount": "Double the toll amount",
+    "Section": "National Highways Fee Rules",
+    "Notes": "FASTag is mandatory on all national highways. Vehicles without FASTag must pay double the toll amount.",
+    "StateVariations": "Applies to all national highways. Some state highways may have similar requirements."
+  },
+  {
+    "Rule": "Overloading Vehicle",
+    "Description": "Carrying passengers or goods beyond the permitted capacity of the vehicle is illegal.",
+    "Fine Amount": "Rs. 20,000 per extra ton",
+    "Section": "Section 194 of MV Act",
+    "Notes": "Overloading damages roads and is dangerous. Fine is calculated per extra ton of weight.",
+    "StateVariations": "Penalties may vary. Vehicle may be impounded until excess load is removed."
+  },
+  {
+    "Rule": "Driving Without Valid Fitness Certificate (Commercial Vehicles)",
+    "Description": "Commercial vehicles must have a valid fitness certificate. Driving without it is illegal.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 192A of MV Act",
+    "Notes": "Fitness certificate is mandatory for commercial vehicles. Must be renewed periodically.",
+    "StateVariations": "Standard penalty. Vehicle may be impounded until fitness certificate is obtained."
+  },
+  {
+    "Rule": "Not Carrying Required Documents",
+    "Description": "Drivers must carry valid DL, RC, Insurance, and PUC certificate while driving.",
+    "Fine Amount": "Rs. 500 per document",
+    "Section": "Section 130 of MV Act",
+    "Notes": "Required documents: Driving License, Registration Certificate, Insurance, PUC. Digital copies in DigiLocker are accepted.",
+    "StateVariations": "Fine is Rs. 500 per missing document. Digital documents are legally valid."
+  },
+  {
+    "Rule": "Illegal Parking",
+    "Description": "Parking in no-parking zones, blocking traffic, or parking in disabled parking spaces without authorization.",
+    "Fine Amount": "Rs. 500 - 1,000",
+    "Section": "Section 122 of MV Act",
+    "Notes": "Parking violations vary by location. Blocking traffic or parking in no-parking zones attracts fines.",
+    "StateVariations": "Fines vary by city and location. Metro cities may have higher penalties."
+  },
+  {
+    "Rule": "Driving Without Number Plate",
+    "Description": "Vehicles must display valid registration number plates as per prescribed format and specifications.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 192 of MV Act",
+    "Notes": "Number plates must be clearly visible, properly fixed, and comply with High Security Registration Plate (HSRP) norms.",
+    "StateVariations": "Standard penalty. Vehicle may be impounded until proper number plate is fixed."
+  },
+  {
+    "Rule": "Violating Lane Discipline",
+    "Description": "Not following lane discipline, changing lanes without indicators, or driving in wrong lanes.",
+    "Fine Amount": "Rs. 500",
+    "Section": "Section 184 of MV Act",
+    "Notes": "Proper lane discipline is essential for road safety. Use indicators before changing lanes.",
+    "StateVariations": "Standard fine. Some states may impose higher penalties on highways."
+  },
+  {
+    "Rule": "Driving Without Valid Permit (Commercial Vehicles)",
+    "Description": "Commercial vehicles must have valid permits for operation. Driving without permit is illegal.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 192A of MV Act",
+    "Notes": "Permits are required for commercial vehicles. Different types of permits exist for different operations.",
+    "StateVariations": "Penalty is uniform. Vehicle may be impounded until valid permit is obtained."
+  },
+  {
+    "Rule": "Not Giving Way to Emergency Vehicles",
+    "Description": "Failing to give way to ambulances, fire trucks, or other emergency vehicles is a traffic violation.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 194E of MV Act",
+    "Notes": "Emergency vehicles have right of way. Not giving way can delay critical services and endanger lives.",
+    "StateVariations": "Standard penalty across India. This is a serious offense."
+  },
+  {
+    "Rule": "Driving Without Valid Medical Certificate (Commercial)",
+    "Description": "Commercial vehicle drivers must have valid medical fitness certificate.",
+    "Fine Amount": "Rs. 2,000",
+    "Section": "Section 181 of MV Act",
+    "Notes": "Medical certificate must be renewed every 2 years for commercial drivers above 40 years, and every year for drivers above 50 years.",
+    "StateVariations": "Standard penalty. License may be suspended until medical certificate is obtained."
+  },
+  {
+    "Rule": "Violating One-Way Traffic Rules",
+    "Description": "Driving against one-way traffic or violating one-way road restrictions.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 184 of MV Act",
+    "Notes": "One-way violations are dangerous and can cause head-on collisions. Always follow traffic direction signs.",
+    "StateVariations": "Standard penalty. License may be suspended for repeat offenses."
+  },
+  {
+    "Rule": "Driving Without Valid Learner's License",
+    "Description": "Learning to drive requires a valid Learner's License. Driving without LL is illegal.",
+    "Fine Amount": "Rs. 1,000",
+    "Section": "Section 181 of MV Act",
+    "Notes": "Learner's License is mandatory before learning to drive. Must be accompanied by a licensed driver.",
+    "StateVariations": "Standard fine. Learner must display 'L' board on vehicle."
+  },
+  {
+    "Rule": "Not Displaying 'L' Board (Learner)",
+    "Description": "Learner drivers must display 'L' board on the front and rear of the vehicle.",
+    "Fine Amount": "Rs. 500",
+    "Section": "Section 177 of MV Act",
+    "Notes": "'L' board must be clearly visible. Learner must be accompanied by a person holding a valid driving license.",
+    "StateVariations": "Standard fine across all states."
+  },
+  {
+    "Rule": "Driving Without Valid Pollution Certificate",
+    "Description": "All vehicles must have valid PUC certificate. This is separate from general vehicle fitness.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 190(2) of MV Act",
+    "Notes": "PUC certificate ensures vehicle meets emission standards. Must be renewed as per vehicle type and age.",
+    "StateVariations": "Standard penalty. Certificate can be obtained from authorized PUC centers."
+  },
+  {
+    "Rule": "Violating Zebra Crossing Rules",
+    "Description": "Not stopping at zebra crossings when pedestrians are crossing is a traffic violation.",
+    "Fine Amount": "Rs. 1,000",
+    "Section": "Section 194B of MV Act",
+    "Notes": "Pedestrians have right of way at zebra crossings. Vehicles must stop and allow pedestrians to cross safely.",
+    "StateVariations": "Standard fine. This is important for pedestrian safety."
+  },
+  {
+    "Rule": "Driving Without Side Mirrors",
+    "Description": "Vehicles must have proper side mirrors (rearview and side view) as per specifications.",
+    "Fine Amount": "Rs. 500",
+    "Section": "Section 177 of MV Act",
+    "Notes": "Proper mirrors are essential for safe driving. Both left and right side mirrors are mandatory.",
+    "StateVariations": "Standard penalty. Vehicle may not pass fitness test without proper mirrors."
+  },
+  {
+    "Rule": "Violating No-Horn Zones",
+    "Description": "Using horn in designated no-horn zones like hospitals, schools, and residential areas.",
+    "Fine Amount": "Rs. 1,000",
+    "Section": "Section 194B of MV Act",
+    "Notes": "No-horn zones are marked for noise pollution control. Violations disturb patients, students, and residents.",
+    "StateVariations": "Fines may vary by city. Metro cities have stricter enforcement."
+  },
+  {
+    "Rule": "Driving Without Valid Road Tax",
+    "Description": "Vehicles must have valid road tax payment. Driving without paying road tax is illegal.",
+    "Fine Amount": "Rs. 2,000",
+    "Section": "State Motor Vehicle Tax Rules",
+    "Notes": "Road tax must be paid to the state where vehicle is registered. Tax varies by state and vehicle type.",
+    "StateVariations": "Penalties vary by state. Some states may impound vehicle until tax is paid."
+  },
+  {
+    "Rule": "Violating Speed Limit in School Zones",
+    "Description": "Exceeding speed limits in school zones or near educational institutions.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 183 of MV Act",
+    "Notes": "School zones have reduced speed limits (usually 25-30 km/h) for child safety. Violations are strictly penalized.",
+    "StateVariations": "Standard penalty. Some states may have higher fines for school zone violations."
+  },
+  {
+    "Rule": "Driving Without Valid Emission Test",
+    "Description": "Vehicles must pass emission tests and have valid PUC certificate.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 190(2) of MV Act",
+    "Notes": "Emission tests ensure vehicles meet Bharat Stage (BS) emission norms. Required for all vehicles.",
+    "StateVariations": "Standard penalty. Test must be done at authorized PUC centers."
+  },
+  {
+    "Rule": "Not Following Traffic Police Directions",
+    "Description": "Not following directions given by traffic police officers or violating their instructions.",
+    "Fine Amount": "Rs. 2,000",
+    "Section": "Section 132 of MV Act",
+    "Notes": "Traffic police directions must be followed. Disobeying can lead to penalties and legal action.",
+    "StateVariations": "Standard fine. May result in additional charges for obstructing traffic management."
+  },
+  {
+    "Rule": "Driving Without Valid Conductor License (Bus)",
+    "Description": "Public transport buses must have a licensed conductor. Operating without valid conductor license is illegal.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 181 of MV Act",
+    "Notes": "Conductor license is mandatory for bus conductors. Must be renewed periodically.",
+    "StateVariations": "Standard penalty. Vehicle permit may be cancelled for violations."
+  },
+  {
+    "Rule": "Violating Height Restrictions",
+    "Description": "Vehicles exceeding height restrictions on bridges or underpasses.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 194 of MV Act",
+    "Notes": "Height restrictions are marked on bridges and underpasses. Violations can cause accidents and infrastructure damage.",
+    "StateVariations": "Standard penalty. Vehicle may be impounded until height is reduced."
+  },
+  {
+    "Rule": "Driving Without Valid Tourist Permit",
+    "Description": "Tourist vehicles must have valid tourist permits for operation.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 192A of MV Act",
+    "Notes": "Tourist permits are required for vehicles used for tourism purposes. Must be obtained from RTO.",
+    "StateVariations": "Standard penalty. Vehicle may be impounded until valid permit is obtained."
+  },
+  {
+    "Rule": "Not Carrying Emergency Kit",
+    "Description": "Vehicles must carry basic emergency kit including first aid, fire extinguisher (for commercial vehicles), and warning triangle.",
+    "Fine Amount": "Rs. 500",
+    "Section": "Section 177 of MV Act",
+    "Notes": "Emergency kit is essential for road safety. Commercial vehicles must have fire extinguisher.",
+    "StateVariations": "Standard fine. Requirements may vary by vehicle type."
+  },
+  {
+    "Rule": "Violating No Entry Restrictions",
+    "Description": "Entering areas marked with 'No Entry' signs or violating restricted entry zones.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 184 of MV Act",
+    "Notes": "No entry zones are marked for safety and traffic management. Violations can cause accidents.",
+    "StateVariations": "Standard penalty. Some areas may have higher fines."
+  },
+  {
+    "Rule": "Driving Without Valid International Driving Permit (Abroad)",
+    "Description": "Indian drivers need International Driving Permit (IDP) to drive in foreign countries that require it.",
+    "Fine Amount": "Varies by country",
+    "Section": "Geneva Convention on Road Traffic",
+    "Notes": "IDP is required in many countries. Must be obtained from RTO before international travel. Valid for 1 year.",
+    "StateVariations": "IDP is issued by Indian RTOs. Requirements vary by destination country."
+  },
+  {
+    "Rule": "Violating Overtaking Rules",
+    "Description": "Overtaking from wrong side, overtaking at curves, or violating safe overtaking procedures.",
+    "Fine Amount": "Rs. 5,000",
+    "Section": "Section 184 of MV Act",
+    "Notes": "Overtaking must be done from right side. Never overtake at curves, bridges, or in no-overtaking zones.",
+    "StateVariations": "Standard penalty. Dangerous overtaking can result in license suspension."
+  },
+  {
+    "Rule": "Driving Without Valid Contract Carriage Permit",
+    "Description": "Contract carriage vehicles (like taxis, cabs) must have valid permits.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 192A of MV Act",
+    "Notes": "Contract carriage permits are required for commercial passenger vehicles. Must be renewed periodically.",
+    "StateVariations": "Standard penalty. Vehicle may be impounded until valid permit is obtained."
+  },
+  {
+    "Rule": "Not Following Right Turn Rules",
+    "Description": "Violating right turn rules at intersections, not using proper turning signals, or cutting corners.",
+    "Fine Amount": "Rs. 1,000",
+    "Section": "Section 177 of MV Act",
+    "Notes": "Right turns must be made from rightmost lane. Use indicators and follow traffic signals.",
+    "StateVariations": "Standard fine. Violations can cause accidents at intersections."
+  },
+  {
+    "Rule": "Driving Without Valid Stage Carriage Permit",
+    "Description": "Stage carriage vehicles (buses) must have valid stage carriage permits.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 192A of MV Act",
+    "Notes": "Stage carriage permits are required for public transport buses. Must be obtained from RTO.",
+    "StateVariations": "Standard penalty. Operating without permit is illegal."
+  },
+  {
+    "Rule": "Violating U-Turn Restrictions",
+    "Description": "Making U-turns where prohibited or violating U-turn rules at intersections.",
+    "Fine Amount": "Rs. 1,000",
+    "Section": "Section 177 of MV Act",
+    "Notes": "U-turns are prohibited at many locations. Always check for 'No U-Turn' signs before turning.",
+    "StateVariations": "Standard fine. Some locations may have higher penalties."
+  },
+  {
+    "Rule": "Driving Without Valid Goods Carriage Permit",
+    "Description": "Goods vehicles must have valid goods carriage permits for commercial transport.",
+    "Fine Amount": "Rs. 10,000",
+    "Section": "Section 192A of MV Act",
+    "Notes": "Goods carriage permits are required for commercial transport vehicles. Must be renewed as per regulations.",
+    "StateVariations": "Standard penalty. Vehicle may be impounded until valid permit is obtained."
+  }
+]
+
