@@ -1,0 +1,116 @@
+/* AI Assistant Response Styling */
+
+.ai-response-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin-top: 1rem;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--emerald);
+}
+
+.ai-response-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.ai-response-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ai-section-header {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ai-section-content {
+  color: var(--gray-dark);
+  line-height: 1.7;
+}
+
+.ai-section-content p {
+  margin: 0.5rem 0;
+}
+
+.ai-list {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.ai-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.ai-list ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.ai-grid-item {
+  background: var(--gray-light);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--emerald);
+}
+
+.ai-grid-item strong {
+  color: var(--primary-blue);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.ai-summary {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--gray-dark);
+  background: #f0f9ff;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--light-blue);
+  margin-bottom: 1.5rem;
+}
+
+/* Message bubble styling for AI responses */
+.message.bot .message-bubble.ai-formatted {
+  background: var(--white);
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  max-width: 100%;
+}
+
+.message.bot .message-bubble.ai-formatted .ai-response-card {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ai-response-card {
+    padding: 1.5rem;
+  }
+  
+  .ai-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ai-section-header {
+    font-size: 1rem;
+  }
+}
+
