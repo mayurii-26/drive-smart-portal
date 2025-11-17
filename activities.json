@@ -1,0 +1,156 @@
+[
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "login",
+    "timestamp": "2025-11-15T05:51:43.271Z",
+    "details": {
+      "email": "llbraju8@gmail.com"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "assistant_query",
+    "timestamp": "2025-11-15T06:00:15.898Z",
+    "details": {
+      "query": "Insurance"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "assistant_query",
+    "timestamp": "2025-11-15T06:00:29.831Z",
+    "details": {
+      "query": "Hypothecation Removal"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "assistant_query",
+    "timestamp": "2025-11-15T06:23:16.273Z",
+    "details": {
+      "query": "Insurance"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "assistant_query",
+    "timestamp": "2025-11-15T06:38:36.630Z",
+    "details": {
+      "query": "NOC (No Objection Certificate)"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "assistant_query",
+    "timestamp": "2025-11-15T06:53:57.070Z",
+    "details": {
+      "query": "What is the fine for illegal parking?"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "assistant_query",
+    "timestamp": "2025-11-15T08:24:11.939Z",
+    "details": {
+      "query": "Learner's License"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "assistant_query",
+    "timestamp": "2025-11-15T08:57:41.818Z",
+    "details": {
+      "query": "PUC Certificate"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "assistant_query",
+    "timestamp": "2025-11-15T08:58:01.650Z",
+    "details": {
+      "query": "License Category Addition"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "login",
+    "timestamp": "2025-11-15T08:58:48.524Z",
+    "details": {
+      "email": "llbraju8@gmail.com"
+    }
+  },
+  {
+    "userId": "admin-001",
+    "userName": "Administrator",
+    "action": "login",
+    "timestamp": "2025-11-15T09:08:09.871Z",
+    "details": {
+      "email": "admin@drivesmart.gov.in"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "login",
+    "timestamp": "2025-11-15T09:10:10.495Z",
+    "details": {
+      "email": "llbraju8@gmail.com"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "assistant_query",
+    "timestamp": "2025-11-15T09:12:04.082Z",
+    "details": {
+      "query": "Vehicle Scrappage"
+    }
+  },
+  {
+    "userId": "admin-001",
+    "userName": "Administrator",
+    "action": "login",
+    "timestamp": "2025-11-15T09:19:29.672Z",
+    "details": {
+      "email": "admin@drivesmart.gov.in"
+    }
+  },
+  {
+    "userId": "user-1763185894770",
+    "userName": "raju",
+    "action": "login",
+    "timestamp": "2025-11-15T09:23:27.827Z",
+    "details": {
+      "email": "llbraju8@gmail.com"
+    }
+  },
+  {
+    "userId": "user-1763373534738",
+    "userName": "mayuri",
+    "action": "login",
+    "timestamp": "2025-11-17T09:59:12.236Z",
+    "details": {
+      "email": "may@gmail.com"
+    }
+  },
+  {
+    "userId": "user-1763373534738",
+    "userName": "mayuri",
+    "action": "document_upload",
+    "timestamp": "2025-11-17T10:00:12.287Z",
+    "details": {
+      "fileName": "OS Activity.1 Poster Design.pdf",
+      "category": "rc"
+    }
+  }
+]

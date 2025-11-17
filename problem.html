@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask Your Problem - Drive Smart Portal</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard.html" class="nav-brand">🚗 Drive Smart Portal</a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <div class="user-info" id="user-info"></div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">❓ Ask Your Problem</h1>
+      </div>
+      <p style="color: var(--gray); margin-bottom: 2rem;">
+        Have a question or facing an issue? Submit your problem here and our admin team will review it and get back to you.
+      </p>
+      
+      <form id="problem-form" onsubmit="submitProblem(event)">
+        <div class="form-group">
+          <label class="form-label" for="problem-category">Category</label>
+          <select id="problem-category" class="form-select" required>
+            <option value="">Select category...</option>
+            <option value="license">License Related</option>
+            <option value="registration">Vehicle Registration</option>
+            <option value="document">Document Issues</option>
+            <option value="payment">Payment/Challan</option>
+            <option value="technical">Technical Issue</option>
+            <option value="general">General Inquiry</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="problem-description">Describe Your Problem</label>
+          <textarea id="problem-description" class="form-textarea" required placeholder="Please provide detailed information about your problem or question..."></textarea>
+        </div>
+        
+        <div id="submit-status"></div>
+        
+        <button type="submit" class="btn btn-primary">Submit Problem</button>
+      </form>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">📝 Submission Guidelines</h2>
+      </div>
+      <ul style="line-height: 2;">
+        <li>Be specific and provide as much detail as possible</li>
+        <li>Include relevant document numbers (RC, DL, etc.) if applicable</li>
+        <li>Mention any error messages or issues you've encountered</li>
+        <li>Our admin team typically responds within 2-3 business days</li>
+        <li>Check your email for updates on your submission</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script src="/js/nav.js"></script>
+  <script>
+    async function submitProblem(event) {
+      event.preventDefault();
+      
+      const category = document.getElementById('problem-category').value;
+      const problem = document.getElementById('problem-description').value;
+      const statusDiv = document.getElementById('submit-status');
+      const submitBtn = event.target.querySelector('button[type="submit"]');
+      
+      submitBtn.disabled = true;
+      statusDiv.innerHTML = '<div class="loading"><div class="spinner"></div> Submitting...</div>';
+      
+      try {
+        const response = await fetch('/api/problem', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ problem, category })
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+          statusDiv.innerHTML = '<div class="alert alert-success">✅ Problem submitted successfully! Our admin team will review it and get back to you soon.</div>';
+          document.getElementById('problem-form').reset();
+        } else {
+          statusDiv.innerHTML = `<div class="alert alert-error">❌ ${data.error || 'Failed to submit problem'}</div>`;
+        }
+      } catch (error) {
+        statusDiv.innerHTML = `<div class="alert alert-error">❌ Network error. Please try again.</div>`;
+      } finally {
+        submitBtn.disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>
+

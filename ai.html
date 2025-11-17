@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTO AI Assistant - Drive Smart Portal</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/ai.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard.html" class="nav-brand">🚗 Drive Smart Portal</a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <div class="user-info" id="user-info"></div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">🤖 RTO AI Assistant</h1>
+      </div>
+      <p style="color: var(--gray); margin-bottom: 2rem;">
+        Ask questions about RTO services: LL/DL, RC registration/transfer, hypothecation removal, NOC, PUC, insurance, penalties, international permits, license categories, and scrappage.
+      </p>
+      
+      <div class="chat-container">
+        <div class="chat-messages" id="chat-messages">
+          <div class="message bot">
+            <div class="message-bubble">
+              👋 Hello! I'm your RTO AI Assistant. I can help you with verified information about:
+              <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                <li>Learner's License (LL) & Driving License (DL)</li>
+                <li>RC Registration & Transfer</li>
+                <li>Hypothecation Removal</li>
+                <li>NOC (No Objection Certificate)</li>
+                <li>PUC Certificate</li>
+                <li>Insurance</li>
+                <li>State Penalties</li>
+                <li>International Permits</li>
+                <li>License Category Addition</li>
+                <li>Vehicle Scrappage</li>
+              </ul>
+              <p style="margin-top: 1rem;">What would you like to know?</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="chat-input-area">
+          <input type="text" id="query-input" class="chat-input" placeholder="Ask about any RTO service..." onkeypress="if(event.key === 'Enter') sendQuery()">
+          <button class="btn btn-primary" onclick="sendQuery()">Send</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card" id="response-card" style="display: none;">
+      <div class="card-header">
+        <h2 class="card-title">Response</h2>
+      </div>
+      <div id="response-content"></div>
+    </div>
+  </div>
+  
+  <script src="/js/nav.js"></script>
+  <script src="/js/ai.js"></script>
+</body>
+</html>
+

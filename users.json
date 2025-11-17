@@ -1,0 +1,26 @@
+[
+  {
+    "id": "admin-001",
+    "name": "Administrator",
+    "email": "admin@drivesmart.gov.in",
+    "password": "$2a$10$SHzhqObfn6/eIOfQVF68veiHcZEiFkMjUjJBuO/Ba3guIpFDiBpbS",
+    "role": "admin",
+    "createdAt": "2025-11-15T05:49:11.387Z"
+  },
+  {
+    "id": "user-1763185894770",
+    "name": "raju",
+    "email": "llbraju8@gmail.com",
+    "password": "$2a$10$oRtXsxcLLJYB/eJng7/QJevGxLxYTWcCN5E11sswqaA.dxC9hc6SC",
+    "role": "user",
+    "createdAt": "2025-11-15T05:51:34.770Z"
+  },
+  {
+    "id": "user-1763373534738",
+    "name": "mayuri",
+    "email": "may@gmail.com",
+    "password": "$2a$10$09GhZUlRftVmMkDRc8838.x2u8Fd62DszXRUZoJasRLgEwZ2g5Any",
+    "role": "user",
+    "createdAt": "2025-11-17T09:58:54.738Z"
+  }
+]

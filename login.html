@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Drive Smart Portal</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h1>🚗 Drive Smart Portal</h1>
+        <p>Your Gateway to RTO Services</p>
+      </div>
+      
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-tab="login" onclick="switchTab('login')">Login</button>
+        <button class="auth-tab" data-tab="signup" onclick="switchTab('signup')">Sign Up</button>
+      </div>
+      
+      <form id="login-form" class="auth-form active" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label class="form-label" for="login-email">Email</label>
+          <input type="email" id="login-email" class="form-input" required placeholder="your@email.com">
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-input" required placeholder="••••••••">
+        </div>
+        
+        <div id="login-error" class="alert alert-error" style="display: none;"></div>
+        
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+      </form>
+      
+      <form id="signup-form" class="auth-form" onsubmit="handleSignup(event)">
+        <div class="form-group">
+          <label class="form-label" for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" class="form-input" required placeholder="John Doe">
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="signup-email">Email</label>
+          <input type="email" id="signup-email" class="form-input" required placeholder="your@email.com">
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="signup-password">Password</label>
+          <input type="password" id="signup-password" class="form-input" required placeholder="Minimum 6 characters">
+        </div>
+        
+        <div id="signup-error" class="alert alert-error" style="display: none;"></div>
+        
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="/js/auth.js"></script>
+</body>
+</html>
+

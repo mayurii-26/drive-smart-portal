@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Drive Smart Portal</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard.html" class="nav-brand">🚗 Drive Smart Portal</a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <div class="user-info" id="user-info"></div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">👨‍💼 Admin Panel</h1>
+      </div>
+      <p style="color: var(--gray); margin-bottom: 2rem;">
+        Monitor user activities, view analytics, and manage the Drive Smart Portal.
+      </p>
+    </div>
+    
+    <div class="stats-grid" id="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value" id="total-users">-</div>
+        <div class="stat-label">Total Users</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="total-activities">-</div>
+        <div class="stat-label">Total Activities</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="total-uploads">-</div>
+        <div class="stat-label">Document Uploads</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="total-problems">-</div>
+        <div class="stat-label">Problem Submissions</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="ai-queries">-</div>
+        <div class="stat-label">AI Assistant Queries</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="chatbot-queries">-</div>
+        <div class="stat-label">Chatbot Queries</div>
+      </div>
+    </div>
+    
+    <div class="chart-container">
+      <h3 class="chart-title">Uploads by Category</h3>
+      <canvas id="uploads-chart" width="400" height="200"></canvas>
+    </div>
+    
+    <div class="chart-container">
+      <h3 class="chart-title">Problems by Status</h3>
+      <canvas id="problems-chart" width="400" height="200"></canvas>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">👥 User Management</h2>
+      </div>
+      <div id="users-list">
+        <div class="loading">Loading users...</div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">📊 Recent Activities</h2>
+      </div>
+      <div id="activities-list">
+        <div class="loading">Loading activities...</div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">❓ Problem Submissions</h2>
+      </div>
+      <div id="problems-list">
+        <div class="loading">Loading problems...</div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/js/nav.js"></script>
+  <script>
+    async function loadStats() {
+      try {
+        const response = await fetch('/api/admin/stats');
+        const data = await response.json();
+        
+        if (data.success) {
+          document.getElementById('total-users').textContent = data.stats.totalUsers;
+          document.getElementById('total-activities').textContent = data.stats.totalActivities;
+          document.getElementById('total-uploads').textContent = data.stats.totalUploads;
+          document.getElementById('total-problems').textContent = data.stats.totalProblems;
+          document.getElementById('ai-queries').textContent = data.stats.aiQueries;
+          document.getElementById('chatbot-queries').textContent = data.stats.chatbotQueries;
+          
+          // Draw charts
+          drawUploadsChart(data.stats.uploadsByCategory);
+          drawProblemsChart(data.stats.problemsByStatus);
+        }
+      } catch (error) {
+        console.error('Error loading stats:', error);
+      }
+    }
+    
+    function drawUploadsChart(data) {
+      const canvas = document.getElementById('uploads-chart');
+      const ctx = canvas.getContext('2d');
+      canvas.width = canvas.offsetWidth;
+      canvas.height = 200;
+      
+      const categories = Object.keys(data);
+      const values = Object.values(data);
+      const maxValue = Math.max(...values, 1);
+      
+      const barWidth = (canvas.width - 100) / categories.length;
+      const barHeight = canvas.height - 60;
+      
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      categories.forEach((category, index) => {
+        const value = values[index];
+        const height = (value / maxValue) * barHeight;
+        const x = 50 + index * barWidth;
+        const y = canvas.height - 40 - height;
+        
+        ctx.fillStyle = '#10b981';
+        ctx.fillRect(x, y, barWidth - 10, height);
+        
+        ctx.fillStyle = '#374151';
+        ctx.font = '12px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(category.toUpperCase(), x + (barWidth - 10) / 2, canvas.height - 20);
+        ctx.fillText(value, x + (barWidth - 10) / 2, y - 5);
+      });
+    }
+    
+    function drawProblemsChart(data) {
+      const canvas = document.getElementById('problems-chart');
+      const ctx = canvas.getContext('2d');
+      canvas.width = canvas.offsetWidth;
+      canvas.height = 200;
+      
+      const statuses = Object.keys(data);
+      const values = Object.values(data);
+      const total = values.reduce((a, b) => a + b, 0) || 1;
+      
+      let currentAngle = -Math.PI / 2;
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+      const radius = Math.min(centerX, centerY) - 20;
+      
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      const colors = ['#10b981', '#f59e0b', '#ef4444', '#3b82f6'];
+      
+      statuses.forEach((status, index) => {
+        const value = values[index];
+        const sliceAngle = (value / total) * 2 * Math.PI;
+        
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.arc(centerX, centerY, radius, currentAngle, currentAngle + sliceAngle);
+        ctx.closePath();
+        ctx.fillStyle = colors[index % colors.length];
+        ctx.fill();
+        
+        // Label
+        const labelAngle = currentAngle + sliceAngle / 2;
+        const labelX = centerX + Math.cos(labelAngle) * (radius * 0.7);
+        const labelY = centerY + Math.sin(labelAngle) * (radius * 0.7);
+        ctx.fillStyle = '#fff';
+        ctx.font = 'bold 12px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(status, labelX, labelY);
+        
+        currentAngle += sliceAngle;
+      });
+      
+      // Legend
+      let legendY = 20;
+      statuses.forEach((status, index) => {
+        ctx.fillStyle = colors[index % colors.length];
+        ctx.fillRect(canvas.width - 150, legendY, 15, 15);
+        ctx.fillStyle = '#374151';
+        ctx.font = '12px sans-serif';
+        ctx.textAlign = 'left';
+        ctx.fillText(`${status}: ${values[index]}`, canvas.width - 130, legendY + 12);
+        legendY += 20;
+      });
+    }
+    
+    async function loadUsers() {
+      try {
+        const response = await fetch('/api/admin/users');
+        const data = await response.json();
+        
+        if (data.success) {
+          const listDiv = document.getElementById('users-list');
+          let html = '<table class="table"><thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Logins</th><th>Last Login</th><th>Total Activities</th></tr></thead><tbody>';
+          
+          data.users.forEach(user => {
+            const lastLogin = user.lastLogin ? new Date(user.lastLogin).toLocaleString() : 'Never';
+            html += `
+              <tr>
+                <td>${user.name}</td>
+                <td>${user.email}</td>
+                <td><span class="badge ${user.role === 'admin' ? 'badge-warning' : 'badge-info'}">${user.role}</span></td>
+                <td>${user.loginCount || 0}</td>
+                <td>${lastLogin}</td>
+                <td>${user.totalActivities || 0}</td>
+              </tr>
+            `;
+          });
+          
+          html += '</tbody></table>';
+          listDiv.innerHTML = html;
+        }
+      } catch (error) {
+        document.getElementById('users-list').innerHTML = '<div class="alert alert-error">Error loading users</div>';
+      }
+    }
+    
+    async function loadActivities() {
+      try {
+        const response = await fetch('/api/admin/activities');
+        const data = await response.json();
+        
+        if (data.success) {
+          const listDiv = document.getElementById('activities-list');
+          let html = '<table class="table"><thead><tr><th>User</th><th>Action</th><th>Timestamp</th><th>Details</th></tr></thead><tbody>';
+          
+          data.activities.slice(0, 50).forEach(activity => {
+            const timestamp = new Date(activity.timestamp).toLocaleString();
+            const details = activity.details ? JSON.stringify(activity.details) : '-';
+            html += `
+              <tr>
+                <td>${activity.userName}</td>
+                <td><span class="badge badge-info">${activity.action}</span></td>
+                <td>${timestamp}</td>
+                <td style="font-size: 0.875rem;">${details}</td>
+              </tr>
+            `;
+          });
+          
+          html += '</tbody></table>';
+          listDiv.innerHTML = html;
+        }
+      } catch (error) {
+        document.getElementById('activities-list').innerHTML = '<div class="alert alert-error">Error loading activities</div>';
+      }
+    }
+    
+    async function loadProblems() {
+      try {
+        const response = await fetch('/api/admin/problems');
+        const data = await response.json();
+        
+        if (data.success) {
+          const listDiv = document.getElementById('problems-list');
+          let html = '<table class="table"><thead><tr><th>User</th><th>Category</th><th>Problem</th><th>Status</th><th>Submitted</th></tr></thead><tbody>';
+          
+          data.problems.forEach(problem => {
+            const submitted = new Date(problem.submittedAt).toLocaleString();
+            const statusColor = problem.status === 'pending' ? 'badge-warning' : problem.status === 'resolved' ? 'badge-success' : 'badge-info';
+            html += `
+              <tr>
+                <td>${problem.userName}</td>
+                <td><span class="badge">${problem.category}</span></td>
+                <td style="max-width: 400px;">${problem.problem.substring(0, 100)}${problem.problem.length > 100 ? '...' : ''}</td>
+                <td><span class="badge ${statusColor}">${problem.status}</span></td>
+                <td>${submitted}</td>
+              </tr>
+            `;
+          });
+          
+          html += '</tbody></table>';
+          listDiv.innerHTML = html;
+        }
+      } catch (error) {
+        document.getElementById('problems-list').innerHTML = '<div class="alert alert-error">Error loading problems</div>';
+      }
+    }
+    
+    // Load all data on page load
+    loadStats();
+    loadUsers();
+    loadActivities();
+    loadProblems();
+    
+    // Refresh stats every 30 seconds
+    setInterval(loadStats, 30000);
+  </script>
+</body>
+</html>
+

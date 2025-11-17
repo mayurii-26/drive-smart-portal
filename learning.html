@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Hub - Drive Smart Portal</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard.html" class="nav-brand">🚗 Drive Smart Portal</a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <div class="user-info" id="user-info"></div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">📚 Learning Hub</h1>
+      </div>
+      <p style="color: var(--gray); margin-bottom: 2rem;">
+        Explore curated learning resources on traffic signs, road rules, safety, maintenance, and eco driving. Track your progress as you learn.
+      </p>
+      
+      <div class="search-box">
+        <input type="text" id="search-input" class="search-input" placeholder="Search learning resources..." onkeyup="filterResources()">
+        <span class="search-icon">🔍</span>
+      </div>
+      
+      <div style="margin-bottom: 2rem;">
+        <button class="btn btn-outline" onclick="filterByCategory('all')">All</button>
+        <button class="btn btn-outline" onclick="filterByCategory('Traffic Signs')">Traffic Signs</button>
+        <button class="btn btn-outline" onclick="filterByCategory('Road Rules')">Road Rules</button>
+        <button class="btn btn-outline" onclick="filterByCategory('Safety')">Safety</button>
+        <button class="btn btn-outline" onclick="filterByCategory('Maintenance')">Maintenance</button>
+        <button class="btn btn-outline" onclick="filterByCategory('Eco Driving')">Eco Driving</button>
+      </div>
+      
+      <h2 style="color: var(--primary-blue); margin-bottom: 1.5rem;">⭐ Featured Resources</h2>
+      <div class="grid grid-4" id="featured-resources"></div>
+      
+      <h2 style="color: var(--primary-blue); margin: 2rem 0 1.5rem 0;">📖 All Resources</h2>
+      <div class="grid grid-3" id="all-resources"></div>
+    </div>
+  </div>
+  
+  <!-- Learning Modal -->
+  <div class="modal-overlay" id="learning-modal" style="display: none;" onclick="if(event.target === this) closeLearningModal()">
+    <div class="modal-content learning-modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2 id="modal-title">Learning Resource</h2>
+        <button class="modal-close" onclick="closeLearningModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="learning-modal-info">
+          <div class="info-item">
+            <strong>Description:</strong>
+            <p id="modal-description"></p>
+          </div>
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>Duration:</strong>
+              <span id="modal-duration" class="badge badge-info"></span>
+            </div>
+            <div class="info-item">
+              <strong>Difficulty:</strong>
+              <span id="modal-difficulty" class="badge badge-warning"></span>
+            </div>
+          </div>
+          <div class="info-item">
+            <strong>Progress:</strong>
+            <div style="margin-top: 0.5rem;">
+              <input type="range" id="modal-progress" min="0" max="100" value="0" oninput="updateProgress()" style="width: 100%;">
+              <div class="progress-bar" style="margin-top: 0.5rem;">
+                <div class="progress-fill" id="modal-progress-bar" style="width: 0%"></div>
+              </div>
+              <p style="text-align: center; margin-top: 0.5rem; color: var(--gray);">
+                <span id="modal-progress-text">0%</span> Complete
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal-detailed-content" style="display: none; margin-top: 2rem; padding-top: 2rem; border-top: 2px solid var(--gray-light);"></div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    .learning-modal-content {
+      max-width: 600px;
+    }
+    
+    .learning-modal-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .info-item {
+      margin-bottom: 1rem;
+    }
+    
+    .info-item strong {
+      color: var(--primary-blue);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      animation: fadeIn 0.2s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .modal-content {
+      background: var(--white);
+      border-radius: var(--border-radius);
+      width: 90%;
+      max-width: 600px;
+      box-shadow: var(--shadow-lg);
+      animation: slideUp 0.3s ease;
+    }
+    
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    .modal-header {
+      padding: 1.5rem;
+      border-bottom: 2px solid var(--gray-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .modal-header h2 {
+      margin: 0;
+      color: var(--primary-blue);
+      font-size: 1.25rem;
+    }
+    
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: var(--gray);
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: var(--transition);
+    }
+    
+    .modal-close:hover {
+      background: var(--gray-light);
+      color: var(--gray-dark);
+    }
+    
+    .modal-body {
+      padding: 1.5rem;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    
+    .learning-section {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    
+    .learning-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    
+    .learning-section h4 {
+      color: var(--primary-blue);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    .learning-section p {
+      line-height: 1.8;
+      color: var(--gray-dark);
+      margin: 0;
+    }
+    
+    .knowledge-list,
+    .safety-list,
+    .examples-list,
+    .guidelines-list,
+    .references-list {
+      margin: 0.75rem 0;
+      padding-left: 1.5rem;
+      line-height: 1.8;
+    }
+    
+    .knowledge-list li,
+    .safety-list li,
+    .examples-list li,
+    .guidelines-list li,
+    .references-list li {
+      margin-bottom: 0.75rem;
+      color: var(--gray-dark);
+    }
+    
+    .safety-list li {
+      color: #dc2626;
+    }
+    
+    .examples-list li {
+      color: var(--emerald-dark);
+    }
+    
+    .guidelines-list li {
+      color: var(--primary-blue);
+    }
+    
+    .references-list li {
+      color: var(--gray);
+      font-style: italic;
+    }
+    
+    @media (max-width: 768px) {
+      .modal-body {
+        max-height: 60vh;
+        padding: 1rem;
+      }
+      
+      .learning-section {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+      }
+    }
+  </style>
+  
+  <script src="/js/nav.js"></script>
+  <script>
+    const learningItems = [
+      {
+        id: 1,
+        title: 'Traffic Signs & Signals',
+        category: 'Traffic Signs',
+        difficulty: 'Beginner',
+        duration: '15 min',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400',
+        description: 'Learn all traffic signs, signals, and their meanings for safe driving.',
+        tags: ['signs', 'signals', 'basics'],
+        featured: true,
+        learningSummary: 'Master the complete system of traffic signs and signals used across India, including regulatory signs, warning signs, informatory signs, and traffic signals as per IRC (Indian Roads Congress) standards and MoRTH guidelines.',
+        knowledgePoints: [
+          'Regulatory Signs: Stop, Give Way, No Entry, Speed Limit, One Way, No Parking, No Overtaking, and their meanings',
+          'Warning Signs: Curves, Intersections, Pedestrian Crossing, School Zone, Railway Crossing, and hazard warnings',
+          'Informatory Signs: Direction signs, Distance markers, Service signs, Parking signs, and facility indicators',
+          'Traffic Signals: Red (Stop), Yellow (Caution), Green (Go), Arrow signals, and pedestrian signals',
+          'Road Markings: Center lines, lane dividers, stop lines, zebra crossings, and their significance',
+          'Mandatory vs Advisory: Understanding which signs are legally binding and which are recommendations'
+        ],
+        safetyTips: [
+          'Always observe traffic signs from a distance to prepare for required actions',
+          'Red traffic signal means complete stop - never cross on red',
+          'Yellow signal means prepare to stop, not accelerate',
+          'Follow lane markings strictly to avoid violations',
+          'School zone signs require reduced speed (25-30 km/h)',
+          'Railway crossing signs require complete stop and look both ways'
+        ],
+        examples: [
+          'Example 1: A circular red sign with white border means "Stop" - you must come to a complete halt',
+          'Example 2: Triangular signs with red border are warning signs - slow down and be cautious',
+          'Example 3: Blue rectangular signs indicate mandatory instructions like "Keep Left"',
+          'Example 4: Green rectangular signs provide information like distance to next city',
+          'Example 5: Yellow flashing signal means proceed with caution, not stop'
+        ],
+        governmentGuidelines: [
+          'As per IRC (Indian Roads Congress) standards for traffic signs',
+          'MoRTH (Ministry of Road Transport & Highways) guidelines for sign placement',
+          'Motor Vehicles Act 1988 Section 119-121 covers traffic sign violations',
+          'Parivahan Sewa portal provides official traffic sign reference',
+          'State Transport Departments follow uniform sign standards across India'
+        ],
+        references: [
+          'Parivahan.gov.in - Official traffic signs database',
+          'MoRTH - Indian Road Congress Standards',
+          'Motor Vehicles Act 1988 - Sections 119-121',
+          'State RTO websites for local variations'
+        ]
+      },
+      {
+        id: 2,
+        title: 'Right of Way Rules',
+        category: 'Road Rules',
+        difficulty: 'Intermediate',
+        duration: '20 min',
+        image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400',
+        description: 'Understand right of way rules at intersections and roundabouts.',
+        tags: ['rules', 'intersections', 'priority'],
+        featured: true,
+        learningSummary: 'Comprehensive understanding of right of way rules at intersections, roundabouts, T-junctions, and merging situations as per Indian traffic regulations and Motor Vehicles Act.',
+        knowledgePoints: [
+          'Intersection Rules: Vehicles on main road have right of way over vehicles from side roads',
+          'Roundabout Rules: Vehicles already in roundabout have priority, enter only when clear',
+          'T-Junction Rules: Traffic on through road has right of way, side road traffic must yield',
+          'Emergency Vehicles: Ambulances, fire trucks, and police vehicles always have right of way',
+          'Pedestrian Priority: Pedestrians at zebra crossings have absolute right of way',
+          'Merging Rules: Vehicles merging must yield to traffic already on the main road',
+          'Four-Way Stops: First to arrive goes first, if simultaneous, vehicle on right has priority'
+        ],
+        safetyTips: [
+          'Always slow down at intersections even if you have right of way',
+          'Make eye contact with other drivers at intersections to confirm intentions',
+          'At roundabouts, yield to traffic from your left (already in the circle)',
+          'Never assume right of way - defensive driving means being prepared to yield',
+          'Emergency vehicles with sirens require immediate right of way - pull to the side',
+          'When in doubt, yield to avoid accidents - safety over right of way'
+        ],
+        examples: [
+          'Example 1: At a T-junction, vehicle on main road proceeds first, side road vehicle waits',
+          'Example 2: In roundabout, vehicle entering must wait for vehicle already circulating',
+          'Example 3: At uncontrolled intersection, vehicle on right has right of way',
+          'Example 4: Emergency ambulance with siren - all vehicles must give way immediately',
+          'Example 5: Pedestrian at zebra crossing - all vehicles must stop and allow crossing'
+        ],
+        governmentGuidelines: [
+          'Motor Vehicles Act 1988 Section 113-114 covers right of way rules',
+          'MoRTH guidelines for intersection design and traffic flow',
+          'Parivahan Sewa provides official right of way regulations',
+          'State Traffic Police enforce right of way violations with penalties',
+          'Indian Road Congress standards for intersection signage'
+        ],
+        references: [
+          'Parivahan.gov.in - Traffic rules and regulations',
+          'Motor Vehicles Act 1988 - Sections 113-114',
+          'MoRTH - Road Safety Guidelines',
+          'State Transport Department websites'
+        ]
+      },
+      {
+        id: 3,
+        title: 'Defensive Driving Techniques',
+        category: 'Safety',
+        difficulty: 'Advanced',
+        duration: '30 min',
+        image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400',
+        description: 'Master defensive driving to anticipate and avoid potential hazards.',
+        tags: ['defensive', 'safety', 'techniques'],
+        featured: true,
+        learningSummary: 'Advanced defensive driving techniques to anticipate hazards, maintain safe distances, and prevent accidents. Based on Indian road conditions and MoRTH road safety standards.',
+        knowledgePoints: [
+          '3-Second Rule: Maintain 3 seconds following distance in normal conditions, 5-6 seconds in adverse weather',
+          'Scanning Techniques: Continuously scan 12-15 seconds ahead, check mirrors every 5-8 seconds',
+          'Blind Spot Management: Always check blind spots before lane changes, use mirrors effectively',
+          'Hazard Recognition: Identify potential dangers like pedestrians, animals, potholes, and erratic drivers',
+          'Speed Management: Adjust speed based on road conditions, weather, and traffic density',
+          'Space Cushion: Maintain safe space around your vehicle - front, sides, and rear',
+          'Escape Routes: Always identify escape paths in case of emergency situations',
+          'Weather Adaptation: Reduce speed by 30-50% in rain, fog, or poor visibility conditions'
+        ],
+        safetyTips: [
+          'Maintain safe following distance - at least 3 seconds behind the vehicle ahead',
+          'Never tailgate - it reduces reaction time and increases accident risk',
+          'Use the "2-second rule" for safe following distance (minimum)',
+          'Always have an escape route planned - know where you can go if something goes wrong',
+          'Watch for brake lights ahead, not just the vehicle directly in front',
+          'In heavy traffic, maintain extra distance to allow for sudden stops',
+          'Avoid driving in other vehicles\' blind spots - either pass or fall back',
+          'Be especially cautious at intersections, even when you have right of way'
+        ],
+        examples: [
+          'Example 1: On highway, maintain 3-second gap - when vehicle ahead passes a marker, count "one-thousand-one, one-thousand-two, one-thousand-three" before you pass same marker',
+          'Example 2: In rain, increase following distance to 5-6 seconds and reduce speed by 30%',
+          'Example 3: At intersection, scan left-right-left before proceeding, even on green signal',
+          'Example 4: When vehicle ahead suddenly brakes, you have space to react safely with 3-second gap',
+          'Example 5: In heavy traffic, maintain space cushion allows you to change lanes if needed'
+        ],
+        governmentGuidelines: [
+          'MoRTH Road Safety Guidelines emphasize defensive driving principles',
+          'Motor Vehicles Act 1988 Section 184 covers dangerous driving penalties',
+          'Parivahan Sewa promotes defensive driving for road safety',
+          'Indian Road Congress standards for safe driving practices',
+          'State Transport Departments conduct defensive driving training programs'
+        ],
+        references: [
+          'MoRTH - Road Safety Guidelines and Best Practices',
+          'Parivahan.gov.in - Defensive Driving Resources',
+          'Motor Vehicles Act 1988 - Section 184',
+          'Indian Road Congress - Safe Driving Standards'
+        ]
+      },
+      {
+        id: 4,
+        title: 'Vehicle Maintenance Basics',
+        category: 'Maintenance',
+        difficulty: 'Beginner',
+        duration: '25 min',
+        image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400',
+        description: 'Essential vehicle maintenance tips to keep your car running smoothly.',
+        tags: ['maintenance', 'car care', 'basics'],
+        featured: true,
+        learningSummary: 'Essential vehicle maintenance practices for Indian road conditions, covering daily checks, periodic maintenance, and compliance with PUC and fitness requirements as per Motor Vehicles Act.',
+        knowledgePoints: [
+          'Daily Checks: Tire pressure, fuel level, engine oil, coolant, lights, and brakes before driving',
+          'Weekly Maintenance: Check battery terminals, windshield washer fluid, tire tread depth, and wiper blades',
+          'Monthly Tasks: Inspect air filter, check brake pads, examine exhaust system, and verify all lights work',
+          'PUC Compliance: Get Pollution Under Control certificate every 6 months (BS-IV) or annually (BS-VI)',
+          'Oil Change Schedule: Change engine oil every 5,000-7,500 km or 6 months, whichever comes first',
+          'Tire Maintenance: Rotate tires every 10,000 km, check alignment, and replace when tread depth below 1.6mm',
+          'Brake System: Inspect brake pads every 10,000 km, check brake fluid level monthly',
+          'Battery Care: Check battery water level (if applicable), clean terminals, test voltage regularly'
+        ],
+        safetyTips: [
+          'Check tire pressure when tires are cold for accurate reading - underinflated tires reduce fuel efficiency',
+          'Never ignore warning lights on dashboard - they indicate critical system issues',
+          'Maintain proper engine oil level - low oil can cause engine damage',
+          'Check brake fluid regularly - low fluid indicates potential brake system problems',
+          'Keep windshield clean and wiper blades in good condition for clear visibility',
+          'Inspect tires for cuts, bulges, or uneven wear - these indicate alignment or suspension issues',
+          'Test all lights before night driving - headlights, taillights, indicators, and brake lights',
+          'Keep PUC certificate valid - driving without valid PUC attracts Rs. 10,000 fine'
+        ],
+        examples: [
+          'Example 1: Check tire pressure monthly - proper pressure (30-35 PSI) improves fuel economy by 3-5%',
+          'Example 2: Change engine oil every 5,000 km - fresh oil prevents engine wear and maintains performance',
+          'Example 3: Get PUC certificate before expiry - BS-IV vehicles need renewal every 6 months',
+          'Example 4: Rotate tires every 10,000 km - extends tire life and ensures even wear',
+          'Example 5: Check brake pads thickness - replace when below 3mm to maintain braking efficiency'
+        ],
+        governmentGuidelines: [
+          'Motor Vehicles Act 1988 Section 190 requires valid PUC certificate',
+          'MoRTH guidelines for vehicle fitness and emission standards',
+          'Parivahan Sewa provides PUC center locations and certificate validity check',
+          'Bharat Stage (BS) emission norms must be complied with',
+          'State RTOs conduct periodic vehicle fitness tests for commercial vehicles'
+        ],
+        references: [
+          'Parivahan.gov.in - PUC certificate and vehicle maintenance',
+          'Motor Vehicles Act 1988 - Section 190 (PUC requirements)',
+          'MoRTH - Vehicle Maintenance and Safety Guidelines',
+          'Bharat Stage Emission Standards - BS-IV and BS-VI compliance'
+        ]
+      },
+      {
+        id: 5,
+        title: 'Parking Rules & Techniques',
+        category: 'Road Rules',
+        difficulty: 'Beginner',
+        duration: '18 min',
+        image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400',
+        description: 'Learn proper parking techniques and understand parking regulations as per Indian traffic rules. Master parallel parking, perpendicular parking, and angle parking while complying with no-parking zones and disabled parking requirements.',
+        tags: ['parking', 'techniques', 'rules'],
+        featured: false,
+        learningSummary: 'Comprehensive guide to parking rules, techniques, and regulations in India. Learn different parking methods, understand no-parking zones, disabled parking requirements, and penalties for parking violations as per Motor Vehicles Act and local traffic regulations.',
+        knowledgePoints: [
+          'Parallel Parking: Position vehicle parallel to curb, maintain 30cm distance, use proper signaling',
+          'Perpendicular Parking: Park at 90-degree angle to curb, ensure vehicle fits within marked space',
+          'Angle Parking: Diagonal parking for better space utilization, common in shopping areas',
+          'No-Parking Zones: Fire hydrants, bus stops, intersections, pedestrian crossings, and emergency exits',
+          'Disabled Parking: Reserved spaces with proper permits, penalties for unauthorized use',
+          'Parking Violations: Fines range from Rs. 500-1,000, vehicle may be towed in severe cases',
+          'Time-Limited Parking: Follow parking meter rules, avoid overstaying permitted time',
+          'Emergency Parking: Use hazard lights, place warning triangle, park safely off road'
+        ],
+        safetyTips: [
+          'Always check for no-parking signs before parking - violations attract fines',
+          'Maintain safe distance from fire hydrants and emergency exits',
+          'Never park in disabled spaces without valid permit - fine is Rs. 1,000',
+          'Use parking brakes and turn wheels toward curb on inclines',
+          'Check mirrors and blind spots before exiting parked vehicle',
+          'Park in well-lit areas at night for security',
+          'Avoid parking near intersections - minimum 5 meters from junction',
+          'Follow parking direction arrows and marked spaces'
+        ],
+        examples: [
+          'Example 1: Parallel parking on narrow street - position vehicle 30cm from curb, use mirrors to align',
+          'Example 2: Shopping mall parking - follow directional arrows, park within marked lines',
+          'Example 3: No-parking zone violation - fine of Rs. 500-1,000, vehicle may be clamped',
+          'Example 4: Disabled parking without permit - fine of Rs. 1,000 and vehicle may be towed',
+          'Example 5: Emergency parking on highway - use hazard lights, place warning triangle 50m behind vehicle'
+        ],
+        governmentGuidelines: [
+          'Motor Vehicles Act 1988 Section 122 covers parking violations and penalties',
+          'Local traffic police enforce parking rules with fines and towing',
+          'Parivahan Sewa provides information on parking regulations by city',
+          'State Transport Departments set local parking rules and fees',
+          'Municipal corporations manage parking spaces and enforcement'
+        ],
+        references: [
+          'Parivahan.gov.in - Parking rules and regulations',
+          'Motor Vehicles Act 1988 - Section 122',
+          'Local Traffic Police - City-specific parking guidelines',
+          'State Transport Department websites'
+        ]
+      },
+      {
+        id: 6,
+        title: 'Highway Driving Safety',
+        category: 'Safety',
+        difficulty: 'Intermediate',
+        duration: '22 min',
+        image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400',
+        description: 'Comprehensive safety guidelines for driving on national highways and expressways in India. Learn speed limits, lane discipline, overtaking rules, and emergency procedures specific to high-speed roads as per MoRTH and NHAI guidelines.',
+        tags: ['highway', 'safety', 'expressway'],
+        featured: false,
+        learningSummary: 'Essential safety protocols for driving on Indian national highways and expressways. Covers speed limits, lane discipline, overtaking procedures, emergency handling, and compliance with NHAI and MoRTH regulations for high-speed road networks.',
+        knowledgePoints: [
+          'Speed Limits: 80-100 km/h for cars, 60-80 km/h for commercial vehicles on highways',
+          'Lane Discipline: Keep left unless overtaking, use right lane only for passing',
+          'Overtaking Rules: Overtake from right, use indicators, check mirrors and blind spots',
+          'Safe Following Distance: Maintain 3-4 second gap, increase in adverse conditions',
+          'Emergency Procedures: Use hazard lights, move to shoulder, place warning triangle',
+          'FASTag Compliance: Mandatory on national highways, double toll for non-compliance',
+          'Rest Stops: Take breaks every 2 hours, avoid fatigue driving',
+          'Night Highway Driving: Use high beams appropriately, maintain safe speed'
+        ],
+        safetyTips: [
+          'Never exceed speed limits - overspeeding is major cause of highway accidents',
+          'Always use seat belts - mandatory on highways, fine is Rs. 1,000',
+          'Maintain safe distance - 3-4 seconds minimum, more in rain or fog',
+          'Overtake only from right side - left-side overtaking is dangerous and illegal',
+          'Use indicators before lane changes - give 3-5 second warning',
+          'Take regular breaks - fatigue causes 20% of highway accidents',
+          'Carry emergency kit - first aid, warning triangle, spare tire, tools',
+          'Check vehicle before highway trip - tires, brakes, lights, fuel, oil'
+        ],
+        examples: [
+          'Example 1: Overtaking on highway - check mirrors, signal right, accelerate, return to left lane',
+          'Example 2: Tire puncture on highway - use hazard lights, move to shoulder, place warning triangle',
+          'Example 3: Fatigue while driving - take break at next rest stop, rest 15-20 minutes',
+          'Example 4: Heavy rain on highway - reduce speed by 30%, increase following distance, use headlights',
+          'Example 5: Emergency braking - apply brakes smoothly, check rear view, use hazard lights if needed'
+        ],
+        governmentGuidelines: [
+          'MoRTH guidelines for highway safety and speed limits',
+          'NHAI regulations for expressway driving and toll collection',
+          'Motor Vehicles Act 1988 Section 183 covers speed limit violations',
+          'Parivahan Sewa provides highway safety information',
+          'State Highway Authorities enforce local highway rules'
+        ],
+        references: [
+          'MoRTH - Highway Safety Guidelines',
+          'NHAI - Expressway Driving Rules',
+          'Motor Vehicles Act 1988 - Section 183',
+          'Parivahan.gov.in - Highway Safety Resources'
+        ]
+      },
+      {
+        id: 7,
+        title: 'Eco-Friendly Driving',
+        category: 'Eco Driving',
+        difficulty: 'Beginner',
+        duration: '15 min',
+        image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400',
+        description: 'Learn eco-driving techniques to reduce fuel consumption, lower emissions, and minimize environmental impact. Includes tips on smooth acceleration, optimal speed, vehicle maintenance for better fuel economy, and compliance with Bharat Stage emission norms.',
+        tags: ['eco', 'fuel', 'environment'],
+        featured: false,
+        learningSummary: 'Master eco-driving techniques to reduce fuel consumption by 10-20%, lower carbon emissions, and comply with Bharat Stage (BS) emission standards. Learn optimal driving speeds, acceleration patterns, and maintenance practices for maximum fuel efficiency.',
+        knowledgePoints: [
+          'Smooth Acceleration: Gradual acceleration saves 15-20% fuel compared to rapid starts',
+          'Optimal Speed: 50-60 km/h in city, 80-90 km/h on highways for best fuel economy',
+          'Engine Idling: Turn off engine if stopped for more than 30 seconds',
+          'Tire Pressure: Maintain correct pressure - underinflated tires reduce efficiency by 3-5%',
+          'Vehicle Maintenance: Regular servicing improves fuel economy by 5-10%',
+          'Route Planning: Avoid traffic, use efficient routes to reduce fuel consumption',
+          'Weight Reduction: Remove unnecessary items - extra 50kg reduces efficiency by 2%',
+          'Air Conditioning: Use AC efficiently, open windows at low speeds, use AC at high speeds'
+        ],
+        safetyTips: [
+          'Maintain steady speed - avoid frequent acceleration and braking',
+          'Anticipate traffic - look ahead to avoid sudden stops',
+          'Use engine braking - downshift instead of heavy braking when possible',
+          'Plan trips - combine errands to reduce total distance',
+          'Avoid rush hours - less traffic means better fuel economy',
+          'Keep windows closed at high speeds - reduces drag and improves efficiency',
+          'Use cruise control on highways - maintains constant speed efficiently',
+          'Regular maintenance - clean air filter, proper engine tuning improves efficiency'
+        ],
+        examples: [
+          'Example 1: Smooth acceleration from stop - gradual press on accelerator saves fuel vs rapid start',
+          'Example 2: Optimal highway speed - 80-90 km/h gives best fuel economy vs 100+ km/h',
+          'Example 3: Tire pressure check - correct pressure (30-35 PSI) improves fuel economy by 3-5%',
+          'Example 4: Route planning - avoiding congested areas saves 20-30% fuel and time',
+          'Example 5: Engine idling - turning off engine at long traffic lights saves fuel'
+        ],
+        governmentGuidelines: [
+          'Bharat Stage (BS) emission norms - BS-IV and BS-VI compliance required',
+          'MoRTH promotes eco-driving for environmental protection',
+          'PUC certificate ensures vehicle meets emission standards',
+          'Parivahan Sewa provides eco-driving tips and resources',
+          'Government incentives for electric and hybrid vehicles'
+        ],
+        references: [
+          'MoRTH - Eco-Driving Guidelines',
+          'Bharat Stage Emission Standards - BS-IV/BS-VI',
+          'Parivahan.gov.in - Fuel Efficiency Tips',
+          'Ministry of Environment - Vehicle Emission Norms'
+        ]
+      },
+      {
+        id: 8,
+        title: 'Night Driving Safety',
+        category: 'Safety',
+        difficulty: 'Intermediate',
+        duration: '20 min',
+        image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400',
+        description: 'Essential safety tips for driving during nighttime conditions. Covers proper use of headlights, maintaining safe speeds, dealing with reduced visibility, handling oncoming traffic glare, and special precautions for Indian road conditions after dark.',
+        tags: ['night', 'safety', 'visibility'],
+        featured: false,
+        learningSummary: 'Comprehensive guide to safe nighttime driving in India. Learn proper headlight usage, speed management, visibility enhancement, handling glare, and special precautions for Indian roads after dark. Night driving requires 2-3x more attention than daytime.',
+        knowledgePoints: [
+          'Headlight Usage: Use low beams in city, high beams on highways, dim for oncoming traffic',
+          'Speed Reduction: Drive 10-20 km/h slower at night due to reduced visibility',
+          'Following Distance: Increase to 4-5 seconds at night for safe stopping',
+          'Visibility Enhancement: Clean windshield, working wipers, clear headlights',
+          'Glare Management: Look at right edge of road when facing oncoming headlights',
+          'Pedestrian Awareness: Watch for pedestrians, animals, and unlit vehicles',
+          'Fatigue Management: Take breaks every 1.5-2 hours, avoid driving when tired',
+          'Road Conditions: Be extra cautious of potholes, speed breakers, and obstacles'
+        ],
+        safetyTips: [
+          'Reduce speed by 10-20 km/h at night - visibility is significantly reduced',
+          'Use low beams in city areas - high beams blind other drivers',
+          'Increase following distance - 4-5 seconds minimum at night',
+          'Clean windshield and headlights - dirty surfaces reduce visibility by 30%',
+          'Watch for pedestrians and animals - harder to see at night',
+          'Take regular breaks - fatigue is more dangerous at night',
+          'Avoid looking directly at oncoming headlights - look at right edge of road',
+          'Use hazard lights if vehicle breaks down - make vehicle visible to others'
+        ],
+        examples: [
+          'Example 1: Highway night driving - use high beams, dim for oncoming traffic, maintain 80 km/h max',
+          'Example 2: City night driving - use low beams, watch for pedestrians, reduce speed to 40-50 km/h',
+          'Example 3: Glare from oncoming vehicle - look at right edge of road, slow down slightly',
+          'Example 4: Animal on road at night - reduce speed, use high beams, honk if safe',
+          'Example 5: Fatigue while night driving - take break at next rest stop, rest 20-30 minutes'
+        ],
+        governmentGuidelines: [
+          'Motor Vehicles Act 1988 requires proper headlight usage',
+          'MoRTH guidelines for night driving safety',
+          'Parivahan Sewa provides night driving safety tips',
+          'State Traffic Police enforce headlight and visibility regulations',
+          'Indian Road Congress standards for road lighting and signage'
+        ],
+        references: [
+          'Motor Vehicles Act 1988 - Headlight Regulations',
+          'MoRTH - Night Driving Safety Guidelines',
+          'Parivahan.gov.in - Road Safety Resources',
+          'Indian Road Congress - Road Lighting Standards'
+        ]
+      },
+      {
+        id: 9,
+        title: 'Lane Discipline',
+        category: 'Road Rules',
+        difficulty: 'Beginner',
+        duration: '12 min',
+        image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400',
+        description: 'Master proper lane usage and lane changing techniques as per Indian traffic rules. Learn when to use left, center, and right lanes, proper signaling, blind spot checks, and lane discipline violations that attract penalties under Motor Vehicles Act.',
+        tags: ['lanes', 'rules', 'techniques'],
+        featured: false,
+        learningSummary: 'Complete guide to lane discipline and lane changing in India. Learn proper lane usage, signaling procedures, blind spot management, and penalties for lane violations. Proper lane discipline reduces accidents by 40% and improves traffic flow.',
+        knowledgePoints: [
+          'Left Lane: Use for normal driving, slower vehicles, and turning left',
+          'Center Lane: Use for through traffic in multi-lane roads',
+          'Right Lane: Use for overtaking, faster vehicles, and turning right',
+          'Lane Changing: Signal 3-5 seconds before, check mirrors and blind spot, change smoothly',
+          'Blind Spot Check: Always check over shoulder before changing lanes',
+          'Lane Markings: Solid lines mean no crossing, dashed lines allow lane changes',
+          'Violations: Driving in wrong lane, changing without signal, blocking traffic',
+          'Penalties: Fine of Rs. 500 for lane discipline violations'
+        ],
+        safetyTips: [
+          'Always use indicators before changing lanes - give 3-5 second warning',
+          'Check mirrors and blind spot - never change lanes without checking',
+          'Stay in left lane unless overtaking - right lane is for faster traffic',
+          'Don\'t weave between lanes - maintain lane position',
+          'Use proper lane for turns - left lane for left turn, right lane for right turn',
+          'Respect lane markings - solid lines mean no crossing',
+          'Don\'t block traffic - move to left if driving slower than traffic',
+          'Be predictable - signal intentions clearly, change lanes smoothly'
+        ],
+        examples: [
+          'Example 1: Changing lanes - signal right, check mirrors, check blind spot, change smoothly',
+          'Example 2: Overtaking - move to right lane, pass vehicle, signal left, return to left lane',
+          'Example 3: Left turn - move to left lane 100m before turn, signal, turn from left lane',
+          'Example 4: Wrong lane violation - driving in right lane without overtaking, fine Rs. 500',
+          'Example 5: Lane change without signal - dangerous and illegal, fine Rs. 500'
+        ],
+        governmentGuidelines: [
+          'Motor Vehicles Act 1988 Section 177 covers lane discipline violations',
+          'MoRTH guidelines for lane usage and traffic flow',
+          'Parivahan Sewa provides lane discipline rules',
+          'State Traffic Police enforce lane discipline with fines',
+          'Indian Road Congress standards for lane markings'
+        ],
+        references: [
+          'Motor Vehicles Act 1988 - Section 177',
+          'MoRTH - Lane Discipline Guidelines',
+          'Parivahan.gov.in - Traffic Rules',
+          'State Transport Department - Local Lane Rules'
+        ]
+      },
+      {
+        id: 10,
+        title: 'Emergency Procedures',
+        category: 'Safety',
+        difficulty: 'Advanced',
+        duration: '25 min',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400',
+        description: 'Critical emergency response procedures for road accidents, vehicle breakdowns, and medical emergencies. Includes first aid basics, contacting emergency services, proper documentation, insurance claim procedures, and legal requirements as per Indian regulations.',
+        tags: ['emergency', 'accidents', 'procedures'],
+        featured: false,
+        learningSummary: 'Essential emergency response procedures for road accidents, breakdowns, and medical emergencies in India. Learn first aid basics, emergency contact numbers, accident documentation, insurance claims, and legal requirements as per Motor Vehicles Act and insurance regulations.',
+        knowledgePoints: [
+          'Accident Response: Stop immediately, provide first aid, call emergency services (108/112)',
+          'First Aid Basics: Check breathing, control bleeding, treat shock, avoid moving injured',
+          'Emergency Contacts: 108 (ambulance), 100 (police), 101 (fire), 112 (unified emergency)',
+          'Accident Documentation: Take photos, note vehicle numbers, get witness contacts',
+          'Insurance Claims: Inform insurer within 24 hours, file FIR if required, submit documents',
+          'Breakdown Procedures: Move to safe location, use hazard lights, place warning triangle',
+          'Legal Requirements: File FIR for accidents with injury/death, exchange details for minor accidents',
+          'Medical Emergency: Call 108, provide location, describe condition, follow dispatcher instructions'
+        ],
+        safetyTips: [
+          'Keep emergency kit in vehicle - first aid, warning triangle, fire extinguisher, torch',
+          'Know emergency numbers - 108 (ambulance), 100 (police), 112 (unified)',
+          'Stop immediately after accident - fleeing is criminal offense',
+          'Provide first aid if trained - but don\'t move injured unless necessary',
+          'Call emergency services immediately - time is critical in accidents',
+          'Document everything - photos, witness details, police report',
+          'Exchange insurance details - mandatory for all parties involved',
+          'File FIR within 24 hours - required for insurance claims and legal protection'
+        ],
+        examples: [
+          'Example 1: Minor accident - exchange details, take photos, inform insurer, file claim',
+          'Example 2: Serious accident with injuries - call 108, provide first aid, call police, document scene',
+          'Example 3: Vehicle breakdown on highway - move to shoulder, use hazard lights, place warning triangle, call help',
+          'Example 4: Medical emergency while driving - pull over safely, call 108, describe location and condition',
+          'Example 5: Hit and run - note vehicle number, call police immediately, provide description'
+        ],
+        governmentGuidelines: [
+          'Motor Vehicles Act 1988 Section 134 requires stopping after accident',
+          'Insurance regulations require reporting accidents within 24 hours',
+          'FIR mandatory for accidents with injury, death, or property damage above Rs. 25,000',
+          'Parivahan Sewa provides accident reporting procedures',
+          'State Police handle accident investigations and documentation'
+        ],
+        references: [
+          'Motor Vehicles Act 1988 - Section 134 (Accident Reporting)',
+          'Insurance Regulatory Authority - Claim Procedures',
+          'Parivahan.gov.in - Emergency Procedures',
+          'State Police - Accident Reporting Guidelines'
+        ]
+      },
+      {
+        id: 11,
+        title: 'Fuel Efficiency Tips',
+        category: 'Eco Driving',
+        difficulty: 'Beginner',
+        duration: '15 min',
+        image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400',
+        description: 'Practical tips to maximize fuel efficiency and reduce fuel costs. Learn about optimal driving speeds, acceleration techniques, route planning, vehicle maintenance for better mileage, and understanding fuel economy ratings as per Indian standards.',
+        tags: ['fuel', 'efficiency', 'savings'],
+        featured: false,
+        learningSummary: 'Practical fuel efficiency techniques to reduce fuel consumption by 15-25% and save money. Learn optimal speeds, acceleration patterns, maintenance practices, and driving habits that maximize mileage while maintaining safety and vehicle performance.',
+        knowledgePoints: [
+          'Optimal Speeds: 50-60 km/h city, 80-90 km/h highway for best fuel economy',
+          'Smooth Acceleration: Gradual acceleration saves 15-20% fuel vs aggressive starts',
+          'Maintain Steady Speed: Constant speed is more efficient than frequent speed changes',
+          'Tire Pressure: Correct pressure improves fuel economy by 3-5%',
+          'Vehicle Maintenance: Regular servicing improves efficiency by 5-10%',
+          'Weight Reduction: Remove unnecessary items - 50kg extra weight reduces efficiency by 2%',
+          'Route Planning: Avoid traffic, use efficient routes to reduce fuel consumption',
+          'Air Filter: Clean air filter improves fuel economy by up to 10%'
+        ],
+        safetyTips: [
+          'Maintain steady speed - avoid frequent acceleration and braking',
+          'Anticipate traffic - look ahead to avoid sudden stops',
+          'Use engine braking - downshift instead of heavy braking',
+          'Plan trips - combine errands to reduce total distance',
+          'Avoid rush hours - less traffic means better fuel economy',
+          'Keep windows closed at high speeds - reduces drag',
+          'Use cruise control on highways - maintains constant speed',
+          'Regular maintenance - clean air filter, proper tuning improves efficiency'
+        ],
+        examples: [
+          'Example 1: Smooth acceleration saves 15-20% fuel vs rapid starts from traffic lights',
+          'Example 2: Optimal highway speed of 80-90 km/h gives best fuel economy vs 100+ km/h',
+          'Example 3: Correct tire pressure (30-35 PSI) improves fuel economy by 3-5%',
+          'Example 4: Route planning to avoid traffic saves 20-30% fuel and time',
+          'Example 5: Regular maintenance improves fuel economy by 5-10%'
+        ],
+        governmentGuidelines: [
+          'Bharat Stage emission norms promote fuel efficiency',
+          'MoRTH guidelines for eco-driving and fuel conservation',
+          'Parivahan Sewa provides fuel efficiency tips',
+          'Government promotes fuel-efficient vehicles and practices',
+          'Fuel economy ratings displayed on new vehicles'
+        ],
+        references: [
+          'MoRTH - Fuel Efficiency Guidelines',
+          'Bharat Stage Emission Standards',
+          'Parivahan.gov.in - Fuel Saving Tips',
+          'Automotive Research Association of India - Fuel Economy Standards'
+        ]
+      },
+      {
+        id: 12,
+        title: 'Weather Driving Conditions',
+        category: 'Safety',
+        difficulty: 'Advanced',
+        duration: '28 min',
+        image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400',
+        description: 'Comprehensive guide to driving safely in adverse weather conditions common in India. Covers monsoon driving, fog handling, extreme heat precautions, visibility management, and adapting driving techniques for different weather scenarios as per road safety guidelines.',
+        tags: ['weather', 'rain', 'fog', 'safety'],
+        featured: false,
+        learningSummary: 'Complete guide to driving in adverse weather conditions in India including monsoon rains, fog, extreme heat, and dust storms. Learn speed adjustments, visibility management, vehicle preparation, and emergency procedures for different weather scenarios.',
+        knowledgePoints: [
+          'Monsoon Driving: Reduce speed by 30-40%, increase following distance, use headlights, avoid flooded areas',
+          'Fog Handling: Use fog lights, reduce speed to 30-40 km/h, maintain safe distance, avoid high beams',
+          'Extreme Heat: Check coolant, tire pressure, avoid overheating, take breaks, stay hydrated',
+          'Visibility Management: Clean windshield, working wipers, proper lights, use defogger',
+          'Aquaplaning: Reduce speed in heavy rain, avoid sudden braking, steer straight if skidding',
+          'Dust Storms: Pull over safely, use hazard lights, close windows, wait for visibility to improve',
+          'Wind Conditions: Reduce speed, hold steering firmly, watch for debris, avoid high-profile vehicles',
+          'Emergency Procedures: Know when to pull over, use hazard lights, wait for conditions to improve'
+        ],
+        safetyTips: [
+          'Reduce speed by 30-40% in rain - wet roads reduce traction significantly',
+          'Increase following distance to 5-6 seconds in adverse weather',
+          'Use headlights in rain and fog - improves visibility and makes you visible',
+          'Avoid flooded areas - water depth can be deceptive, engine can stall',
+          'Check vehicle before monsoon - wipers, tires, lights, brakes must be working',
+          'Pull over in severe fog - if visibility below 50m, find safe place to stop',
+          'Don\'t use high beams in fog - creates glare, reduces visibility',
+          'Keep emergency kit - torch, first aid, water, emergency contacts'
+        ],
+        examples: [
+          'Example 1: Heavy rain - reduce speed to 40-50 km/h, use headlights, increase following distance',
+          'Example 2: Dense fog - reduce speed to 30-40 km/h, use fog lights, pull over if visibility too low',
+          'Example 3: Flooded road - check depth, avoid if water above wheel center, don\'t drive through',
+          'Example 4: Aquaplaning - reduce speed, avoid sudden braking, steer straight until control regained',
+          'Example 5: Dust storm - pull over safely, close windows, use hazard lights, wait for visibility'
+        ],
+        governmentGuidelines: [
+          'MoRTH guidelines for weather-related driving safety',
+          'Motor Vehicles Act requires proper vehicle lights and visibility',
+          'Parivahan Sewa provides weather driving safety tips',
+          'State Transport Departments issue weather advisories',
+          'Indian Meteorological Department provides weather warnings'
+        ],
+        references: [
+          'MoRTH - Weather Driving Safety Guidelines',
+          'Motor Vehicles Act 1988 - Visibility Requirements',
+          'Parivahan.gov.in - Weather Safety Resources',
+          'Indian Meteorological Department - Weather Advisories'
+        ]
+      },
+      {
+        id: 13,
+        title: 'Roundabout Navigation',
+        category: 'Road Rules',
+        difficulty: 'Intermediate',
+        duration: '18 min',
+        image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400',
+        description: 'Complete guide to navigating roundabouts safely and correctly. Learn entry and exit procedures, right of way rules, proper signaling, lane selection, and common mistakes to avoid. Based on Indian traffic regulations and MoRTH road design standards.',
+        tags: ['roundabout', 'navigation', 'rules'],
+        featured: false,
+        learningSummary: 'Comprehensive guide to navigating roundabouts in India. Learn entry procedures, right of way rules, proper signaling, lane selection, and exit techniques. Roundabouts improve traffic flow but require understanding of specific rules and procedures.',
+        knowledgePoints: [
+          'Right of Way: Vehicles already in roundabout have priority, entering vehicles must yield',
+          'Entry Procedure: Slow down, check for traffic from left, enter when clear, yield to circulating traffic',
+          'Lane Selection: Use appropriate lane based on exit - right lane for right exits, left for straight/left',
+          'Signaling: Signal right when entering, maintain signal for exit, signal left before exit',
+          'Speed Control: Reduce speed to 20-30 km/h, maintain steady speed in roundabout',
+          'Exit Procedure: Signal left before exit, check mirrors, exit smoothly to correct lane',
+          'Multi-Lane Roundabouts: Choose lane based on exit, don\'t change lanes inside roundabout',
+          'Common Mistakes: Not yielding, wrong signaling, changing lanes, stopping unnecessarily'
+        ],
+        safetyTips: [
+          'Always yield to traffic already in roundabout - they have right of way',
+          'Reduce speed to 20-30 km/h before entering - roundabouts require slow speeds',
+          'Use proper signaling - signal right when entering, left before exiting',
+          'Choose correct lane before entering - based on your exit direction',
+          'Don\'t stop in roundabout - keep moving unless emergency',
+          'Watch for pedestrians - they may cross at roundabout exits',
+          'Don\'t change lanes inside roundabout - choose correct lane before entering',
+          'Be patient - wait for clear gap before entering, don\'t force entry'
+        ],
+        examples: [
+          'Example 1: Entering roundabout - slow down, check left, yield to circulating traffic, enter when clear',
+          'Example 2: Exiting roundabout - signal left before exit, check mirrors, exit smoothly',
+          'Example 3: Right turn at roundabout - use right lane, signal right, exit at first exit',
+          'Example 4: Straight through roundabout - use left or center lane, signal left before exit',
+          'Example 5: Wrong entry - not yielding to circulating traffic causes accidents and violations'
+        ],
+        governmentGuidelines: [
+          'Motor Vehicles Act 1988 Section 113-114 covers right of way at roundabouts',
+          'MoRTH guidelines for roundabout design and navigation',
+          'Parivahan Sewa provides roundabout navigation rules',
+          'State Traffic Police enforce roundabout rules',
+          'Indian Road Congress standards for roundabout signage'
+        ],
+        references: [
+          'Motor Vehicles Act 1988 - Sections 113-114',
+          'MoRTH - Roundabout Design Guidelines',
+          'Parivahan.gov.in - Roundabout Navigation',
+          'Indian Road Congress - Roundabout Standards'
+        ]
+      },
+      {
+        id: 14,
+        title: 'Electric Vehicle Basics',
+        category: 'Eco Driving',
+        difficulty: 'Beginner',
+        duration: '20 min',
+        image: 'https://images.unsplash.com/photo-1593941707882-a5bac6861d75?w=400',
+        description: 'Introduction to electric vehicles (EVs) in India, their benefits, charging infrastructure, government incentives, and driving techniques specific to EVs. Learn about FAME scheme, charging station locations, range management, and maintenance requirements for electric vehicles.',
+        tags: ['electric', 'EV', 'environment'],
+        featured: false,
+        learningSummary: 'Complete introduction to electric vehicles in India including benefits, charging infrastructure, government incentives under FAME scheme, range management, driving techniques, and maintenance. EVs are the future of sustainable transportation in India.',
+        knowledgePoints: [
+          'EV Benefits: Zero emissions, lower running costs, government incentives, reduced maintenance',
+          'FAME Scheme: Faster Adoption and Manufacturing of Electric Vehicles - subsidies up to Rs. 1.5 lakh',
+          'Charging Infrastructure: Home charging, public charging stations, fast charging networks',
+          'Range Management: Plan routes, use regenerative braking, optimize driving for maximum range',
+          'Driving Techniques: Smooth acceleration, regenerative braking, efficient speed, pre-conditioning',
+          'Charging Types: AC slow charging (6-8 hours), DC fast charging (30-60 minutes)',
+          'Maintenance: Lower maintenance than ICE vehicles, battery care, software updates',
+          'Cost Savings: Lower fuel costs, reduced maintenance, government incentives, tax benefits'
+        ],
+        safetyTips: [
+          'Plan charging stops - know charging station locations before long trips',
+          'Monitor battery level - maintain 20-80% charge for battery health',
+          'Use regenerative braking - extends range and reduces brake wear',
+          'Pre-condition vehicle - use app to heat/cool while charging to save battery',
+          'Drive efficiently - smooth acceleration and steady speed maximize range',
+          'Charge at home when possible - cheaper and convenient',
+          'Keep battery between 20-80% - avoid full discharge and overcharging',
+          'Regular software updates - improve efficiency and add features'
+        ],
+        examples: [
+          'Example 1: Home charging - install charger, charge overnight, start day with full battery',
+          'Example 2: Public charging - use charging apps to find stations, plan route with charging stops',
+          'Example 3: Range optimization - use regenerative braking, smooth acceleration, maintain steady speed',
+          'Example 4: FAME subsidy - get up to Rs. 1.5 lakh discount on eligible EV models',
+          'Example 5: Fast charging - charge 0-80% in 30-60 minutes at DC fast charging stations'
+        ],
+        governmentGuidelines: [
+          'FAME India scheme - subsidies and incentives for EV adoption',
+          'MoRTH promotes electric vehicle adoption for environmental protection',
+          'Parivahan Sewa provides EV information and charging station locations',
+          'State governments offer additional incentives and tax benefits',
+          'Charging infrastructure development under government initiatives'
+        ],
+        references: [
+          'FAME India Scheme - Electric Vehicle Incentives',
+          'MoRTH - Electric Vehicle Policy',
+          'Parivahan.gov.in - EV Information',
+          'Ministry of Heavy Industries - FAME Scheme Details'
+        ]
+      }
+    ];
+    
+    let currentCategory = 'all';
+    let currentSearch = '';
+    
+    function getProgress(itemId) {
+      const progress = localStorage.getItem(`learning_${itemId}`);
+      return progress ? parseInt(progress) : 0;
+    }
+    
+    function setProgress(itemId, progress) {
+      localStorage.setItem(`learning_${itemId}`, progress.toString());
+      renderResources();
+    }
+    
+    function renderResources() {
+      let filtered = learningItems;
+      
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(item => item.category === currentCategory);
+      }
+      
+      if (currentSearch) {
+        const searchLower = currentSearch.toLowerCase();
+        filtered = filtered.filter(item =>
+          item.title.toLowerCase().includes(searchLower) ||
+          item.description.toLowerCase().includes(searchLower) ||
+          item.tags.some(tag => tag.toLowerCase().includes(searchLower))
+        );
+      }
+      
+      const featured = filtered.filter(item => item.featured);
+      const all = filtered.filter(item => !item.featured);
+      
+      renderFeatured(featured);
+      renderAll(all);
+    }
+    
+    function renderFeatured(items) {
+      const container = document.getElementById('featured-resources');
+      container.innerHTML = '';
+      
+      items.forEach(item => {
+        const progress = getProgress(item.id);
+        const card = createLearningCard(item, progress);
+        container.appendChild(card);
+      });
+    }
+    
+    function renderAll(items) {
+      const container = document.getElementById('all-resources');
+      container.innerHTML = '';
+      
+      items.forEach(item => {
+        const progress = getProgress(item.id);
+        const card = createLearningCard(item, progress);
+        container.appendChild(card);
+      });
+    }
+    
+    function createLearningCard(item, progress) {
+      const card = document.createElement('div');
+      card.className = 'learning-item';
+      card.onclick = () => openResource(item);
+      
+      const difficultyColors = {
+        'Beginner': 'badge-success',
+        'Intermediate': 'badge-info',
+        'Advanced': 'badge-warning'
+      };
+      
+      card.innerHTML = `
+        <img src="${item.image}" alt="${item.title}" class="learning-image" onerror="this.src='https://via.placeholder.com/400x200?text=${encodeURIComponent(item.title)}'">
+        <div class="learning-content">
+          <h3 style="color: var(--primary-blue); margin-bottom: 0.5rem;">${item.title}</h3>
+          <p style="color: var(--gray); font-size: 0.875rem; margin-bottom: 1rem;">${item.description}</p>
+          <div class="learning-meta">
+            <span class="badge ${difficultyColors[item.difficulty]}">${item.difficulty}</span>
+            <span class="badge badge-info">⏱️ ${item.duration}</span>
+            <span class="badge" style="background: var(--gray-light);">${item.category}</span>
+          </div>
+          <div class="learning-tags">
+            ${item.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: ${progress}%"></div>
+          </div>
+          <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--gray);">Progress: ${progress}%</p>
+        </div>
+      `;
+      
+      return card;
+    }
+    
+    function openResource(item) {
+      openLearningModal(item);
+    }
+    
+    function openLearningModal(item) {
+      const modal = document.getElementById('learning-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDescription = document.getElementById('modal-description');
+      const modalDuration = document.getElementById('modal-duration');
+      const modalDifficulty = document.getElementById('modal-difficulty');
+      const modalProgress = document.getElementById('modal-progress');
+      const modalProgressBar = document.getElementById('modal-progress-bar');
+      const modalProgressText = document.getElementById('modal-progress-text');
+      const modalContent = document.getElementById('modal-detailed-content');
+      
+      const currentProgress = getProgress(item.id);
+      
+      modalTitle.textContent = item.title;
+      modalDescription.textContent = item.description;
+      modalDuration.textContent = item.duration;
+      modalDifficulty.textContent = item.difficulty;
+      modalProgress.value = currentProgress;
+      modalProgressBar.style.width = currentProgress + '%';
+      modalProgressText.textContent = currentProgress + '%';
+      
+      // Display rich content for all items (featured and regular)
+      if (item.learningSummary || item.knowledgePoints) {
+        let richContent = '';
+        
+        if (item.learningSummary) {
+          richContent += `<div class="learning-section"><h4>📖 Learning Summary</h4><p>${item.learningSummary}</p></div>`;
+        }
+        
+        if (item.knowledgePoints && item.knowledgePoints.length > 0) {
+          richContent += `<div class="learning-section"><h4>📚 Key Knowledge Points</h4><ol class="knowledge-list">`;
+          item.knowledgePoints.forEach(point => {
+            richContent += `<li>${point}</li>`;
+          });
+          richContent += `</ol></div>`;
+        }
+        
+        if (item.safetyTips && item.safetyTips.length > 0) {
+          richContent += `<div class="learning-section"><h4>⚠️ Safety Tips</h4><ul class="safety-list">`;
+          item.safetyTips.forEach(tip => {
+            richContent += `<li>${tip}</li>`;
+          });
+          richContent += `</ul></div>`;
+        }
+        
+        if (item.examples && item.examples.length > 0) {
+          richContent += `<div class="learning-section"><h4>💡 Real-Life Examples</h4><ul class="examples-list">`;
+          item.examples.forEach(example => {
+            richContent += `<li>${example}</li>`;
+          });
+          richContent += `</ul></div>`;
+        }
+        
+        if (item.governmentGuidelines && item.governmentGuidelines.length > 0) {
+          richContent += `<div class="learning-section"><h4>🏛️ Government Guidelines</h4><ul class="guidelines-list">`;
+          item.governmentGuidelines.forEach(guideline => {
+            richContent += `<li>${guideline}</li>`;
+          });
+          richContent += `</ul></div>`;
+        }
+        
+        if (item.references && item.references.length > 0) {
+          richContent += `<div class="learning-section"><h4>📖 Official References</h4><ul class="references-list">`;
+          item.references.forEach(ref => {
+            richContent += `<li>${ref}</li>`;
+          });
+          richContent += `</ul></div>`;
+        }
+        
+        modalContent.innerHTML = richContent;
+        modalContent.style.display = 'block';
+      } else {
+        modalContent.innerHTML = '';
+        modalContent.style.display = 'none';
+      }
+      
+      modal.dataset.itemId = item.id;
+      modal.style.display = 'flex';
+    }
+    
+    function closeLearningModal() {
+      document.getElementById('learning-modal').style.display = 'none';
+    }
+    
+    function updateProgress() {
+      const modal = document.getElementById('learning-modal');
+      const itemId = parseInt(modal.dataset.itemId);
+      const progressValue = parseInt(document.getElementById('modal-progress').value);
+      
+      setProgress(itemId, progressValue);
+      
+      const modalProgressBar = document.getElementById('modal-progress-bar');
+      const modalProgressText = document.getElementById('modal-progress-text');
+      modalProgressBar.style.width = progressValue + '%';
+      modalProgressText.textContent = progressValue + '%';
+      
+      // Update the card in the grid
+      renderResources();
+    }
+    
+    function filterByCategory(category) {
+      currentCategory = category;
+      document.querySelectorAll('.btn-outline').forEach(btn => {
+        if (btn.textContent === category || (category === 'all' && btn.textContent === 'All')) {
+          btn.style.background = 'var(--emerald)';
+          btn.style.color = 'var(--white)';
+        } else {
+          btn.style.background = 'transparent';
+          btn.style.color = 'var(--emerald)';
+        }
+      });
+      renderResources();
+    }
+    
+    function filterResources() {
+      currentSearch = document.getElementById('search-input').value;
+      renderResources();
+    }
+    
+    // Initial render
+    renderResources();
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving Test Practice - Drive Smart Portal</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/practice.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard.html" class="nav-brand">🚗 Drive Smart Portal</a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <div class="user-info" id="user-info"></div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="practice-wrapper">
+      <div class="practice-header">
+        <h1 class="practice-title">📝 Driving Test Practice</h1>
+        <p class="practice-subtitle">Practice for your Learner's License (LL) exam with interactive MCQs</p>
+      </div>
+      
+      <!-- Quiz Container -->
+      <div id="quiz-container" class="quiz-container">
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress-bar"></div>
+          <div class="progress-text" id="progress-text">Question 0 of 0</div>
+        </div>
+        
+        <!-- Question Card -->
+        <div class="question-card" id="question-card">
+          <div class="question-number" id="question-number">Q1</div>
+          <div class="question-text" id="question-text">Loading questions...</div>
+          
+          <!-- Options -->
+          <div class="options-container" id="options-container">
+            <!-- Options will be inserted here by JavaScript -->
+          </div>
+          
+          <!-- Navigation Buttons -->
+          <div class="quiz-nav">
+            <button class="btn btn-secondary" id="prev-btn" onclick="previousQuestion()" disabled>Previous</button>
+            <button class="btn btn-primary" id="next-btn" onclick="nextQuestion()">Next</button>
+            <button class="btn btn-success" id="submit-btn" onclick="submitQuiz()" style="display: none;">Submit Quiz</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Results Container -->
+      <div id="results-container" class="results-container" style="display: none;">
+        <div class="results-card">
+          <div class="results-header">
+            <h2>Quiz Results</h2>
+            <div class="score-display">
+              <div class="score-circle">
+                <span class="score-number" id="score-number">0</span>
+                <span class="score-label">Score</span>
+              </div>
+              <div class="score-details">
+                <div class="score-item correct">
+                  <span class="score-icon">✓</span>
+                  <span>Correct: <strong id="correct-count">0</strong></span>
+                </div>
+                <div class="score-item incorrect">
+                  <span class="score-icon">✗</span>
+                  <span>Incorrect: <strong id="incorrect-count">0</strong></span>
+                </div>
+                <div class="score-item total">
+                  <span class="score-icon">📊</span>
+                  <span>Total: <strong id="total-count">0</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="results-actions">
+            <button class="btn btn-primary" onclick="restartQuiz()">🔄 Retry Quiz</button>
+            <button class="btn btn-secondary" onclick="reviewAnswers()">📖 Review Answers</button>
+          </div>
+          
+          <!-- Review Section -->
+          <div id="review-section" class="review-section" style="display: none;">
+            <h3>Answer Review</h3>
+            <div id="review-questions">
+              <!-- Review questions will be inserted here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/js/nav.js"></script>
+  <script src="/js/practice.js"></script>
+</body>
+</html>
+

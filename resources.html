@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Links - Drive Smart Portal</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard.html" class="nav-brand">🚗 Drive Smart Portal</a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <div class="user-info" id="user-info"></div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">🔗 Government Resource Links</h1>
+      </div>
+      <p style="color: var(--gray); margin-bottom: 2rem;">
+        Quick access to 20+ verified government portals with detailed guides, prerequisites, and categories.
+      </p>
+      
+      <div class="search-box">
+        <input type="text" id="search-input" class="search-input" placeholder="Search resources..." onkeyup="filterResources()">
+        <span class="search-icon">🔍</span>
+      </div>
+      
+      <div id="resources-list"></div>
+    </div>
+  </div>
+  
+  <script src="/js/nav.js"></script>
+  <script>
+    const resources = [
+      {
+        name: 'Parivahan Sewa',
+        url: 'https://parivahan.gov.in',
+        category: 'RTO Services',
+        verified: true,
+        guide: 'Official portal for all RTO services including license applications, vehicle registration, and online services.',
+        prerequisites: ['Aadhaar card', 'Mobile number', 'Email ID'],
+        description: 'Centralized portal for driving license, vehicle registration, and related services.'
+      },
+      {
+        name: 'eChallan Portal',
+        url: 'https://echallan.parivahan.gov.in',
+        category: 'Traffic & Penalties',
+        verified: true,
+        guide: 'Pay traffic challans online, check pending fines, and view violation history.',
+        prerequisites: ['Vehicle number', 'DL number'],
+        description: 'Pay traffic fines and check challan status online.'
+      },
+      {
+        name: 'Vahan Portal',
+        url: 'https://vahan.parivahan.gov.in',
+        category: 'Vehicle Registration',
+        verified: true,
+        guide: 'Check vehicle registration details, owner information, and RC status.',
+        prerequisites: ['Vehicle registration number'],
+        description: 'Verify vehicle registration and ownership details.'
+      },
+      {
+        name: 'Sarathi Portal',
+        url: 'https://sarathi.parivahan.gov.in',
+        category: 'Driving License',
+        verified: true,
+        guide: 'Apply for learner\'s license, driving license, renewals, and duplicate licenses.',
+        prerequisites: ['Aadhaar', 'Age proof', 'Address proof'],
+        description: 'Complete driving license services portal.'
+      },
+      {
+        name: 'DigiLocker',
+        url: 'https://digilocker.gov.in',
+        category: 'Documents',
+        verified: true,
+        guide: 'Store and access digital documents including RC, DL, and other certificates.',
+        prerequisites: ['Aadhaar number', 'Mobile number'],
+        description: 'Digital document storage and verification platform.'
+      },
+      {
+        name: 'IRDA (Insurance)',
+        url: 'https://www.irdai.gov.in',
+        category: 'Insurance',
+        verified: true,
+        guide: 'Information about motor vehicle insurance, policy details, and insurance companies.',
+        prerequisites: ['Vehicle details'],
+        description: 'Insurance Regulatory and Development Authority portal.'
+      },
+      {
+        name: 'Bharat Stage Portal',
+        url: 'https://www.bsportal.org',
+        category: 'Emission Standards',
+        verified: true,
+        guide: 'Information about Bharat Stage emission norms and vehicle compliance.',
+        prerequisites: [],
+        description: 'Bharat Stage emission standards information.'
+      },
+      {
+        name: 'National Highways Authority',
+        url: 'https://www.nhai.gov.in',
+        category: 'Highways',
+        verified: true,
+        guide: 'Information about national highways, toll plazas, and road infrastructure.',
+        prerequisites: [],
+        description: 'National Highways Authority of India portal.'
+      },
+      {
+        name: 'Ministry of Road Transport',
+        url: 'https://morth.nic.in',
+        category: 'Government',
+        verified: true,
+        guide: 'Official ministry website with policies, rules, and regulations.',
+        prerequisites: [],
+        description: 'Ministry of Road Transport and Highways official portal.'
+      },
+      {
+        name: 'FASTag Portal',
+        url: 'https://www.npci.org.in',
+        category: 'Toll & Payments',
+        verified: true,
+        guide: 'FASTag registration, recharge, and toll payment services.',
+        prerequisites: ['Vehicle RC', 'Bank account'],
+        description: 'FASTag services for seamless toll payments.'
+      },
+      {
+        name: 'Vehicle Scrappage Portal',
+        url: 'https://www.vehicle-scrappage.in',
+        category: 'Scrappage',
+        verified: true,
+        guide: 'Register old vehicles for scrappage and get benefits for new vehicle purchase.',
+        prerequisites: ['Vehicle RC', 'Age proof'],
+        description: 'Official vehicle scrappage policy portal.'
+      },
+      {
+        name: 'PUC Certificate Portal',
+        url: 'https://www.transport.rajasthan.gov.in',
+        category: 'PUC',
+        verified: true,
+        guide: 'Find authorized PUC centers and check certificate validity.',
+        prerequisites: ['Vehicle number'],
+        description: 'Pollution Under Control certificate services.'
+      },
+      {
+        name: 'State RTO Portal (Maharashtra)',
+        url: 'https://transport.maharashtra.gov.in',
+        category: 'State RTO',
+        verified: true,
+        guide: 'Maharashtra state RTO services and regional information.',
+        prerequisites: ['State-specific documents'],
+        description: 'Maharashtra Transport Department portal.'
+      },
+      {
+        name: 'State RTO Portal (Delhi)',
+        url: 'https://transport.delhi.gov.in',
+        category: 'State RTO',
+        verified: true,
+        guide: 'Delhi Transport Department services and information.',
+        prerequisites: ['Delhi address proof'],
+        description: 'Delhi Transport Department official portal.'
+      },
+      {
+        name: 'State RTO Portal (Karnataka)',
+        url: 'https://transport.karnataka.gov.in',
+        category: 'State RTO',
+        verified: true,
+        guide: 'Karnataka Transport Department services.',
+        prerequisites: ['Karnataka address proof'],
+        description: 'Karnataka Transport Department portal.'
+      },
+      {
+        name: 'State RTO Portal (Gujarat)',
+        url: 'https://rtogujarat.gov.in',
+        category: 'State RTO',
+        verified: true,
+        guide: 'Gujarat RTO services and online applications.',
+        prerequisites: ['Gujarat address proof'],
+        description: 'Gujarat RTO official portal.'
+      },
+      {
+        name: 'State RTO Portal (Tamil Nadu)',
+        url: 'https://tn.gov.in/transport',
+        category: 'State RTO',
+        verified: true,
+        guide: 'Tamil Nadu Transport Department services.',
+        prerequisites: ['Tamil Nadu address proof'],
+        description: 'Tamil Nadu Transport Department portal.'
+      },
+      {
+        name: 'State RTO Portal (West Bengal)',
+        url: 'https://wbtransport.gov.in',
+        category: 'State RTO',
+        verified: true,
+        guide: 'West Bengal Transport Department services.',
+        prerequisites: ['West Bengal address proof'],
+        description: 'West Bengal Transport Department portal.'
+      },
+      {
+        name: 'State RTO Portal (Rajasthan)',
+        url: 'https://transport.rajasthan.gov.in',
+        category: 'State RTO',
+        verified: true,
+        guide: 'Rajasthan Transport Department services.',
+        prerequisites: ['Rajasthan address proof'],
+        description: 'Rajasthan Transport Department portal.'
+      },
+      {
+        name: 'State RTO Portal (Uttar Pradesh)',
+        url: 'https://transport.up.gov.in',
+        category: 'State RTO',
+        verified: true,
+        guide: 'Uttar Pradesh Transport Department services.',
+        prerequisites: ['UP address proof'],
+        description: 'Uttar Pradesh Transport Department portal.'
+      }
+    ];
+    
+    function renderResources(filteredResources = resources) {
+      const listDiv = document.getElementById('resources-list');
+      listDiv.innerHTML = '';
+      
+      // Group by category
+      const byCategory = {};
+      filteredResources.forEach(resource => {
+        if (!byCategory[resource.category]) {
+          byCategory[resource.category] = [];
+        }
+        byCategory[resource.category].push(resource);
+      });
+      
+      Object.keys(byCategory).forEach(category => {
+        const categoryDiv = document.createElement('div');
+        categoryDiv.innerHTML = `<h2 style="color: var(--primary-blue); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--emerald);">${category}</h2>`;
+        listDiv.appendChild(categoryDiv);
+        
+        byCategory[category].forEach(resource => {
+          const resourceDiv = document.createElement('div');
+          resourceDiv.className = 'resource-item';
+          resourceDiv.innerHTML = `
+            <div class="resource-header" onclick="toggleResource(this)">
+              <div>
+                <span class="resource-title">
+                  ${resource.name}
+                  ${resource.verified ? '<span class="badge badge-verified" style="margin-left: 0.5rem;">✓ Verified</span>' : ''}
+                </span>
+                <p style="color: var(--gray); margin-top: 0.25rem; font-size: 0.875rem;">${resource.description}</p>
+              </div>
+              <span style="font-size: 1.5rem;">▼</span>
+            </div>
+            <div class="resource-content">
+              <p style="margin-bottom: 1rem;"><strong>URL:</strong> <a href="${resource.url}" target="_blank" style="color: var(--emerald);">${resource.url}</a></p>
+              <div class="resource-guide">
+                <h4 style="color: var(--primary-blue); margin-bottom: 0.5rem;">📖 Guide:</h4>
+                <p>${resource.guide}</p>
+              </div>
+              ${resource.prerequisites && resource.prerequisites.length > 0 ? `
+                <div style="margin-top: 1rem;">
+                  <h4 style="color: var(--primary-blue); margin-bottom: 0.5rem;">📋 Prerequisites:</h4>
+                  <ul style="margin-left: 1.5rem;">
+                    ${resource.prerequisites.map(p => `<li>${p}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+            </div>
+          `;
+          listDiv.appendChild(resourceDiv);
+        });
+      });
+    }
+    
+    function toggleResource(element) {
+      const content = element.nextElementSibling;
+      const arrow = element.querySelector('span:last-child');
+      content.classList.toggle('expanded');
+      arrow.textContent = content.classList.contains('expanded') ? '▲' : '▼';
+    }
+    
+    function filterResources() {
+      const searchTerm = document.getElementById('search-input').value.toLowerCase();
+      const filtered = resources.filter(resource => 
+        resource.name.toLowerCase().includes(searchTerm) ||
+        resource.category.toLowerCase().includes(searchTerm) ||
+        resource.description.toLowerCase().includes(searchTerm) ||
+        resource.guide.toLowerCase().includes(searchTerm)
+      );
+      renderResources(filtered);
+    }
+    
+    // Initial render
+    renderResources();
+  </script>
+</body>
+</html>
+
